@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../base/css/amazeui.min.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../base/css/base.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../base/js/need/layer.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../css/headerAndFooter.css?v=2017.9.27"/>
+    <link rel="stylesheet" href="../css/personalCenter.css?v=2017.10.9"/>
+    <script type="text/javascript"  src="../base/js/jquery-1.7.1.min.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/amazeui.min.js?v=2017.6.19"></script>
+    <script type="text/javascript" src="../base/js/jquery.touchSlider.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/layer.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/Function.js?v=2017.9.25"></script>
+    <script type="text/javascript"  src="../base/js/template.js?v=2017.9.25"></script>
+    <script type="text/javascript"  src="../js/headerAndFooter.js?v=2017.9.27"></script>
+    <script type="text/javascript" src="../js/wxReturn.js"></script>
+    <script type="text/javascript"  src="../js/personalCenter.js?v=2017.10.9"></script>
+</head>
+<body>
+<div class="header">
+    <!--个人信息-->
+    <div class="pc-userInfos">
+        <img src="" class="pc-userImg fl" onclick="goUserInfo(this)"/>
+        <div class="pc-userInfo fl">
+            <div class="pc-userName"><span  onclick="goUserInfo(this)"></span></div>
+            <div class="pc-vip" onclick="goOther(this)" data-id="0"><img src="../img/pc-vip.png" class="pc-vipImg"/>会员积分 </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--我的订单-->
+    <div class="pc-order">
+        <div class="pc-orderT">
+            我的订单<span class="pc-orderTR" onclick="goOrder(this)" data-id="0">全部订单<img src="../img/right.png" class="pc-right"/> </span>
+        </div>
+        <div class="pc-orderB">
+            <ul class="pc-orderBUl">
+                <li class="pc-orderBLi" onclick="goOrder(this)" data-id="1">
+                    <p class="pc-orderBLiImg">
+                        <img src="../img/pc-pay.png"/>
+                    </p>
+                    <p class="pc-orderBLiName">待付款</p>
+                    <span class="pc-orderBLiNum pc-orderBLiNum1 disn"></span>
+                </li>
+                <li class="pc-orderBLi" onclick="goOrder(this)" data-id="2">
+                    <p class="pc-orderBLiImg">
+                        <img src="../img/pc-wait.png"/>
+                    </p>
+                    <p class="pc-orderBLiName">待发货</p>
+                    <span class="pc-orderBLiNum pc-orderBLiNum2 disn"></span>
+                </li>
+                <li class="pc-orderBLi" onclick="goOrder(this)" data-id="3">
+                    <p class="pc-orderBLiImg">
+                        <img src="../img/pc-get.png"/>
+                    </p>
+                    <p class="pc-orderBLiName">待收货</p>
+                    <span class="pc-orderBLiNum pc-orderBLiNum3 disn"></span>
+                </li>
+                <li class="pc-orderBLi" onclick="goOrder(this)" data-id="4">
+                    <p class="pc-orderBLiImg">
+                        <img src="../img/pc-end.png"/>
+                    </p>
+                    <p class="pc-orderBLiName">退款中</p>
+                    <span class="pc-orderBLiNum pc-orderBLiNum4 disn"></span>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+    <!--推荐产品-->
+    <img src="" class="pc-middleImg" onclick="pc_goProductDetail(this)"/>
+    <!--我的相关信息链接-->
+    <div class="pc-active">
+        <div class="pc-vipGo" onclick="goOther(this)"  data-id="0">
+            <img src="../img/pc-vip2.png" class="pc-vipGoImg"/>
+            <div class="pc-vipGoName">
+                <span class="">会员福利</span>
+                <img src="../img/right.png" class="pc-right2 fr"/>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="pc-vipGo" onclick="goOther(this)" data-id="1">
+            <img src="../img/myCollect.png" class="pc-vipGoImg"/>
+            <div class="pc-vipGoName">
+                <span class="">我的收藏</span>
+                <img src="../img/right.png" class="pc-right2 fr"/>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="pc-vipGo" onclick="goOther(this)" data-id="2">
+            <img src="../img/myFoot.png" class="pc-vipGoImg"/>
+            <div class="pc-vipGoName">
+                <span class="">我的足迹</span>
+                <img src="../img/right.png" class="pc-right2 fr"/>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="pc-vipGo" onclick="goOther(this)" data-id="7">
+            <img src="../img/myaddress.png" class="pc-vipGoImg"/>
+            <div class="pc-vipGoName">
+                <span class="">收货地址</span>
+                <img src="../img/right.png" class="pc-right2 fr"/>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="pc-vipGo" onclick="goOther(this)" data-id="3">
+            <img src="../img/jcbd.png" class="pc-vipGoImg"/>
+            <div class="pc-vipGoName pc-vipGoNameLast">
+                <span class="">更换绑定</span>
+                <img src="../img/right.png" class="pc-right2 fr"/>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--魅族相关信息-->
+    <div class="pc-active pc-active2">
+        <!--<div class="pc-vipGo" onclick="goOther(this)" data-id="4">-->
+            <!--<img src="../img/pc-store.png" class="pc-vipGoImg"/>-->
+            <!--<div class="pc-vipGoName">-->
+                <!--<span class="">线下门店</span>-->
+                <!--<img src="../img/right.png" class="pc-right2 fr"/>-->
+                <!--<div class="clear"></div>-->
+            <!--</div>-->
+            <!--<div class="clear"></div>-->
+        <!--</div>-->
+        <!--<div class="pc-vipGo" onclick="goOther(this)" data-id="5">-->
+            <!--<img src="../img/pc-company.png" class="pc-vipGoImg"/>-->
+            <!--<div class="pc-vipGoName">-->
+                <!--<span class="">公司简介</span>-->
+                <!--<img src="../img/right.png" class="pc-right2 fr"/>-->
+                <!--<div class="clear"></div>-->
+            <!--</div>-->
+            <!--<div class="clear"></div>-->
+        <!--</div>-->
+        <!--<div class="pc-vipGo" onclick="goOther(this)" data-id="6">-->
+            <!--<img src="../img/pc-buyAfter.png" class="pc-vipGoImg"/>-->
+            <!--<div class="pc-vipGoName pc-vipGoNameLast">-->
+                <!--<span class="">售后服务</span>-->
+                <!--<img src="../img/right.png" class="pc-right2 fr"/>-->
+                <!--<div class="clear"></div>-->
+            <!--</div>-->
+            <!--<div class="clear"></div>-->
+        <!--</div>-->
+    </div>
+    <!--为你推荐-->
+    <!--<div class="recommends"></div>-->
+</div>
+<div class="section"></div>
+<div class="footer"></div>
+</body>
+</html>

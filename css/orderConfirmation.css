@@ -1,0 +1,176 @@
+body{
+    background-color: #F5F5F5;
+}
+/*地址选择*/
+.oc-address{
+    background-color: #FFFFFF;
+    padding: 10px 5%;
+    margin-bottom: 8px;
+    position: relative;
+}
+.oc-addressT{
+    font-family: SimHei;
+    font-size: 13px;
+    width: 90%;
+}
+.oc-userInfo{
+    color: #333333;
+    line-height: 15px;
+}
+.oc-addressImg{
+    width: 13px;
+    margin-right: 5%;
+}
+.oc-addressB{
+    font-size: 13px;
+    font-family: SimHei;
+    color: #8f8f8f;
+    padding-left: 12px;
+    line-height: 15px;
+    margin: 5px 0 0 5%;
+    display: inline-block;
+    width: 85%;
+}
+.oc-right{
+    height: 17px;
+}
+/*产品*/
+.oc-product{
+    background-color: #FFFFFF;
+    border-top: 1px solid #F5F5F5;
+    margin-bottom: 8px;
+}
+.oc-productLi{
+    border-bottom: 1px solid #F5F5F5;
+    padding:15px 5%;
+}
+.oc-productImg{
+    width:15%;
+    float: left;
+    margin-right: 5%;
+}
+.oc-productInfo,.oc-productMoney{
+    float: left;
+    font-size: 14px;
+    font-family: SimHei;
+    width: 56%;
+    padding-top: 5px;
+}
+.oc-productMoney{
+    width: 24%;
+    text-align: right;
+}
+.oc-productName,.oc-productAbstract,.oc-productMoneyT,.oc-productMoneyB{
+    display: inline-block;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 15px;
+    float: left;
+    color: #4b4b4b;
+}
+.oc-productAbstract,.oc-productMoneyB{
+    margin-top: 5px;
+    color: #939393;
+    font-size: 12px;
+}
+.oc-productLiLast{
+    border: 0;
+}
+/*订单金额*/
+.oc-orderMoney{
+    padding:10px 0;
+    font-size: 13px;
+    background-color: #FFFFFF;
+    line-height: 15px;
+    margin-bottom: 8px;
+    color: #8b8b8b;
+}
+.oc-orderMoneyT{
+    border-bottom: 1px solid #F5F5F5;
+    padding:  0 5%;
+}
+.oc-orderMoneyDiscount{
+    margin:10px 0;
+}
+.oc-orderMoneyDiscount .oc-right{
+    margin-left: 5%;
+    height: 14px;
+}
+.oc-orderMoneyDiscountSum{
+    color: red;
+}
+.oc-orderMoneyB{
+    padding:  8px 5% 0;
+    font-size: 15px;
+    color: #33B8F1;
+}
+.oc-orderMoneyBMoney{
+    font-size: 17px;
+}
+/*下单时间*/
+.oc-orderTime{
+    background-color: #FFFFFF;
+    padding: 10px 5%;
+    font-size: 13px;
+    font-family: SimHei;
+    color:#8b8b8b;
+    line-height: 15px;
+}
+.oc-call a{
+    border:1px solid #D7D7D7;
+    color: #8b8b8b;
+    line-height: 13px;
+    padding: 8px 14px;
+    border-radius: 3px;
+}
+.oc-orderNos{
+    margin:10px 0 20px;
+}
+/*底部*/
+.oc-footerNav{
+    position: fixed;
+    background-color: #F8F8F8;
+    z-index: 20;
+    bottom: 0;
+    width: 100%;
+    height: 51px;
+    line-height: 51px;
+}
+.oc-footerSumBuy{
+    display: inline-block;
+    background-color: #32B8F1;
+    color: #FFFFFF;
+    width: 30%;
+    text-align: center;
+
+}
+.oc-footerSum{
+    margin-right: 3%;
+    width: 67%;
+}
+.oc-footerSumMoenys{
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+    width: 87%;
+    color: #050000;
+    font-size: 14px;
+}
+.oc-footerSumMoeny{
+    font-size: 12px;
+    color: #32B8F1;
+}
+.oc-footerSumMoenyR{
+    font-size: 16px;
+}
+
+.oc-addRight{
+    position: absolute;
+    top: 70%;
+    margin-top: -17px;
+    right: 5%;
+}

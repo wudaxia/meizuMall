@@ -1,0 +1,190 @@
+/*编辑*/
+.sc-carEdit{
+    background-color: #FAFAFA;
+    line-height: 40px;
+    padding:0 5%;
+    font-size: 15px;
+}
+.sc-carEditImg{
+    width: 15px;
+}
+.sc-carEditWord{
+    position: relative;
+    top: 2.3px;
+    margin-left: 3px;
+    color: #717171;
+}
+/*购物车*/
+.sc-productLi{
+    background-color: #FFFFFF;
+    border-top: 1px solid #DCDCDC;
+    padding: 15px 5%;
+    border-bottom: 1px solid #DCDCDC;
+    margin-bottom: 5px;
+}
+.sc-productListCheck{
+    float: left;
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/sc-noChose.png") no-repeat;
+    background-size: 100%;
+    background-color: #FFFFFF;
+    margin-top: 30px;
+}
+.sc-productListCheckChose{
+    background: url("../img/sc-chose.png") no-repeat;
+    background-size: 100%;
+}
+.sc-productListImg{
+    margin: 0 3%;
+    float: left;
+    width: 30%;
+    border:1px solid #BDBDBD;
+    border-radius: 5px;
+}
+.sc-productBody{
+    float: left;
+    width: 56%;
+}
+.sc-productBodyName{
+    color: #4b4b4b;
+    font-size: 15px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.sc-productBodyStyle{
+    color: #b2b2b2;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.sc-productBodySumL{
+    font-size: 12px;
+    color: #33B8F1;
+}
+.sc-productBodyPrice{
+    ; color: #33B8F1;
+    margin-left: -3px;
+}
+.sc-productBodyDel{
+    font-size: 13px;
+    margin-left: 10px;
+}
+.sc-productBodySum1{
+    width: 100%;
+    display: inline-block;
+    margin-top: 10px;
+}
+.sc-choseStyleMinus,.sc-choseStyleJoin,.sc-choseStyleNum{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+}
+.sc-choseStyleMinus img,.sc-choseStyleJoin img{
+    width: 100%;
+}
+.sc-choseStyleJoin {
+    border-left: 1px solid #D7D7D7;
+}
+.sc-choseStyleMinus{
+    border-right: 1px solid #D7D7D7;
+}
+.sc-choseStyleNum{
+    border:0
+}
+.sc-choseStyleSumB{
+    display: inline-block;
+    margin-top: 10px;
+    border: 1px solid #D7D7D7;
+}
+.sc-productLiLast{
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+/*间距*/
+.section{
+    background-color: #FAFAFA;
+}
+/*.sc-height{*/
+    /*width: 100%;*/
+    /*height: 5px;*/
+    /*background-color: #FAFAFA;*/
+/*}*/
+
+/*全选*/
+.footer{
+    height: 98px;
+}
+.sc-footerCheck{
+    float: left;
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/sc-noChose.png") no-repeat;
+    background-size: 100%;
+    background-color: #FFFFFF;
+    margin-top: 2px;
+    margin-right: 5px;
+
+}
+.sc-footerCheckChose{
+    background: url("../img/sc-chose.png") no-repeat;
+    background-size: 100%;
+}
+.sc-footer{
+    border-top: 1px solid #DFDFDF;
+    background-color: #FFFFFF;
+    z-index: 20;
+    position: fixed;
+    bottom: 51px;
+    width: 100%;
+    -webkit-box-shadow: #DFDFDF 0px -2px 2px;
+    -moz-box-shadow: #DFDFDF 0px -2px 2px;
+    box-shadow: #DFDFDF 0px -2px 2px;
+}
+.sc-footerSum{
+    font-size: 15px;
+    width: 65%;
+    float: left;
+    padding:10px 0 10px 5%;
+}
+.sc-footerSumAll{margin-right: 7%}
+.sc-footerSumBuy,.sc-footerSumDel{
+    width: 35%;
+    float: left;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #33B8F1;
+    padding:10px 0 10px 0;
+}
+.sc-footerSumMoeny{
+    font-size: 12px;
+    color: #33B8F1;
+    margin-left: -5px;
+    display: inline-block;
+    width: 39%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.sc-footerSumMoenyR{
+    font-size: 16px;
+}
+.o-blankWord2{
+    font-size: 12px;
+    color: #b7b7b7;
+}
+.o-blank{
+    margin: 0 auto;
+    padding: 15% 0;
+}
+.o-blank img{
+    width: 100px;
+    height: 100px;
+}

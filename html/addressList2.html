@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择收货地址</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../base/css/amazeui.min.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../base/css/base.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../base/js/need/layer.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../css/headerAndFooter.css?v=2017.9.27"/>
+    <link rel="stylesheet" href="../css/addressList2.css?v=2017.10.11"/>
+    <script type="text/javascript"  src="../base/js/jquery-1.7.1.min.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/amazeui.min.js?v=2017.6.19"></script>
+    <script type="text/javascript" src="../base/js/jquery.touchSlider.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/layer.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/Function.js?v=2017.9.25"></script>
+    <script type="text/javascript"  src="../base/js/template.js?v=2017.9.25"></script>
+    <script type="text/javascript"  src="../js/headerAndFooter.js?v=2017.9.27"></script>
+    <script type="text/javascript" src="../js/wxReturn.js"></script>
+    <script type="text/javascript"  src="../js/addressList2.js?v=2017.10.11"></script>
+</head>
+<body>
+<div class="header"></div>
+<div class="section">
+    <!--收货地址列表-->
+    <div class="al-ul"></div>
+    <!--<div class="al-li"  data-style="4" onclick="al_active(this)">-->
+        <!--&lt;!&ndash;我的信息&ndash;&gt;-->
+        <!--<div class="al-liT">-->
+            <!--<div class="al-liUserInfo">-->
+                <!--<div class="al-liName fl">程嵩</div>-->
+                <!--<div class="al-liPhone fr">13566375655</div>-->
+                <!--<div class="clear"></div>-->
+            <!--</div>-->
+            <!--<div class="al-liAddress"><span class="al-liAddressDefault">[默认地址]</span>浙江省宁波市鄞州区高桥镇君园和庄20幢301室</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;操作&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="al-liB">&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;设为默认&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="al-liDefault fl" onclick="al_active(this)" data-style="0">&ndash;&gt;-->
+                <!--&lt;!&ndash;<img src="../img/sc-chose.png" class="al-liDefaultImg fl"/>&ndash;&gt;-->
+                <!--&lt;!&ndash;<span class="al-liDefaultWord al-liDefaultWordChose fl">默认地址</span>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="clear"></div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;操作&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="al-liActive fr">&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="al-liEdit fl" onclick="al_active(this)" data-style="1">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<img src="../img/al-edit.png" class="al-liEditImg fl"/>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<span class="al-liEditWord fl">编辑</span>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="clear"></div>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="al-liDel fl" onclick="al_active(this)" data-style="2">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<img src="../img/al-del.png" class="al-liDelImg fl"/>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<span class="al-liDelWord fl">删除</span>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="clear"></div>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="clear"></div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="clear"></div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--</div>-->
+    <!--<div class="al-li"  data-style="4" onclick="al_active(this)">-->
+        <!--&lt;!&ndash;我的信息&ndash;&gt;-->
+        <!--<div class="al-liT">-->
+            <!--<div class="al-liUserInfo">-->
+                <!--<div class="al-liName fl">程嵩</div>-->
+                <!--<div class="al-liPhone fr">13566375655</div>-->
+                <!--<div class="clear"></div>-->
+            <!--</div>-->
+            <!--<div class="al-liAddress">浙江省宁波市鄞州区高桥镇君园和庄20幢301室</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="al-li"  data-style="4" onclick="al_active(this)">-->
+        <!--&lt;!&ndash;我的信息&ndash;&gt;-->
+        <!--<div class="al-liT">-->
+            <!--<div class="al-liUserInfo">-->
+                <!--<div class="al-liName fl">程嵩</div>-->
+                <!--<div class="al-liPhone fr">13566375655</div>-->
+                <!--<div class="clear"></div>-->
+            <!--</div>-->
+            <!--<div class="al-liAddress">浙江省宁波市鄞州区高桥镇君园和庄20幢301室</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="loadBox"></div>
+</div>
+<div class="footer">
+    <div class="o-footerNav">
+        <span class="o-footerNavLi o-footerNavLi1" data-style="3" onclick="al_active(this)">管理地址</span>
+        <div class="clear"></div>
+    </div>
+</div>
+</body>
+</html>

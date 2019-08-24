@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自动登录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../base/css/amazeui.min.css" />
+    <link rel="stylesheet" href="../base/css/base.css" />
+    <link rel="stylesheet" href="../css/headerAndFooter.css" />
+    <script type="text/javascript" src="../base/js/jquery-1.7.1.min.js?v=2017.6.9"></script>
+    <script type="text/javascript" src="../base/js/amazeui.min.js?v=2017.6.9"></script>
+    <script type="text/javascript" src="../base/layer.mobile-v2.0/layer_mobile/layer.js?v=2017.6.22"></script>
+    <script type="text/javascript" src="../base/js/Function.js?v=2017.6.9"></script>
+    <script type="text/javascript" src="../base/js/template.js?v=2017.6.9"></script>
+    <script type="text/javascript" src="../js/wxReturn.js?v=2017.6.9"></script>
+</head>
+<body data-url="0">
+
+</body>
+<script>
+    function openUserInfo(){
+//        登录成功返回页面
+        layer.open({
+            type: 2
+            ,content: '加载中',
+            shadeClose: false
+        });
+        var redirect_url2=JSON.parse(sessionStorage.getItem("loginUrl"));
+        if(redirect_url2!=null&&redirect_url2!=undefined&&redirect_url2!="")
+        {
+            self.location.href=redirect_url2;
+            layer.closeAll();
+        }
+        else{
+            self.location.href="personalCenter.html";
+            layer.closeAll();
+        }
+    }
+</script>
+</html>

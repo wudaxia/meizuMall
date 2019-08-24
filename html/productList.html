@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品分类</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../base/css/amazeui.min.css?v=2017.6.19"/>
+    <link rel="stylesheet" href="../base/css/base.css?v=2017.6.19"/>
+    <link rel="stylesheet" href="../base/js/need/layer.css?v=2017.6.19"/>
+    <link rel="stylesheet" href="../css/headerAndFooter.css?v=2017.6.19"/>
+    <link rel="stylesheet" href="../css/productList.css?v=2017.6.19"/>
+    <script type="text/javascript" src="../base/js/jquery-1.7.1.min.js?v=2017.6.19"></script>
+    <script type="text/javascript" src="../base/js/amazeui.min.js?v=2017.6.19"></script>
+    <script type="text/javascript" src="../base/js/layer.js?v=2017.6.19"></script>
+    <script type="text/javascript" src="../base/js/jquery.touchSlider.js?v=2017.6.8"></script>
+    <script type="text/javascript" src="../base/js/jquery.event.drag-1.5.min.js?v=2017.6.8"></script>
+    <script type="text/javascript" src="../base/js/Function.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/template.js?v=2017.6.19"></script>
+    <script type="text/javascript"  src="../js/headerAndFooter.js?v=2017.9.27"></script>
+    <script type="text/javascript" src="../js/wxReturn1.js"></script>
+    <script type="text/javascript" src="../js/productList.js?v=2017.6.19"></script>
+</head>
+<body >
+<div class="header"></div>
+<div class="section">
+    <!--类别-->
+        <div class="pl-productStyle">
+            <ul class="pl-productStyleUl">
+                <!--<li class="pl-productStyleLi pl-productStyleLiChose" onclick="productStyleLi(this)" data-id="0">新品上线</li>-->
+                <!--<li class="pl-productStyleLi" onclick="productStyleLi(this)" data-id="1">爆款推荐</li>-->
+                <!--<li class="pl-productStyleLi" onclick="productStyleLi(this)"  data-id="2">魅族手机</li>-->
+                <!--<li class="pl-productStyleLi" onclick="productStyleLi(this)">耳机音箱</li>-->
+                <!--<li class="pl-productStyleLi" onclick="productStyleLi(this)">壳膜配件</li>-->
+                <!--<li class="pl-productStyleLi" onclick="productStyleLi(this)">智能设备</li>-->
+                <!--<li class="pl-productStyleLi" onclick="productStyleLi(this)">魅族周边</li>-->
+                <!--<li class="pl-productStyleLi pl-productStyleLiLast" onclick="productStyleLi(this)">专卖店</li>-->
+            </ul>
+        </div>
+
+
+    <!--产品展示-->
+    <div class="pl-productShow">
+        <div class="pl-productShowSort">
+            <div class="pl-productShowTitle">
+                <!--轮播-->
+                <div class="main_visual">
+                    <div class="flicking_con">
+                        <!--<a href="#">1</a>-->
+                        <!--<a href="#">2</a>-->
+                        <!--<a href="#">3</a>-->
+                        <!--<a href="#">4</a>-->
+                    </div>
+                    <div class="main_image">
+                        <ul class="i-banner1Ul">
+                            <!--<li><img class="img_1" src="../img/i-banner.jpg"/></li>-->
+                            <!--<li><a href=""><img class="img_2" src="../img/i-banner.jpg"/></a></li>-->
+                            <!--<li><a href=""> <img class="img_3" src="../img/i-banner.jpg"/></a></li>-->
+                            <!--<li><a href=""><img class="img_2" src="../img/i-banner2.jpg"/></a></li>-->
+                        </ul>
+                        <a href="javascript:;" id="btn_prev"></a>
+                        <a href="javascript:;" id="btn_next"></a>
+                    </div>
+                </div>
+                <!--轮播结束-->
+            </div>
+            <!--商品内容的分类-->
+            <!--<div class="pl-productShowLi">-->
+                <!--<div class="pl-productShow1Title">-->
+                    <!--<span class="pl-productShow1TitleSpan1"></span>-->
+                    <!--<span class="pl-productShow1TitleSpan3">热门分的的的的类</span>-->
+                    <!--<span class="pl-productShow1TitleSpan2"></span>-->
+                <!--</div>-->
+                <!--<div>-->
+                    <!--<ul class="pl-productShow1Ul2">-->
+                        <!--<li class="pl-productShow1Li" onclick="pl_goOther(this)">-->
+                            <!--<p><img src="../img/product.jpg"/></p>-->
+                            <!--<p class="pl-productShow1LiWord">手机</p>-->
+                        <!--</li>-->
+                        <!--<li class="pl-productShow1Li" onclick="pl_goOther(this)">-->
+                            <!--<p><img src="../img/product2.jpg"/></p>-->
+                            <!--<p class="pl-productShow1LiWord">笔记本</p>-->
+                        <!--</li>-->
+                        <!--<li class="pl-productShow1Li pl-productShow1LiLast" onclick="pl_goOther(this)">-->
+                            <!--<p><img src="../img/product.jpg"/></p>-->
+                            <!--<p class="pl-productShow1LiWord">手机</p>-->
+                        <!--</li>-->
+                        <!--<li class="pl-productShow1Li" onclick="pl_goOther(this)">-->
+                            <!--<p><img src="../img/product2.jpg"/></p>-->
+                            <!--<p class="pl-productShow1LiWord">笔记本</p>-->
+                        <!--</li>-->
+                        <!--<li class="pl-productShow1Li" onclick="pl_goOther(this)">-->
+                            <!--<p><img src="../img/product.jpg"/></p>-->
+                            <!--<p class="pl-productShow1LiWord">手机</p>-->
+                        <!--</li>-->
+                        <!--<li class="pl-productShow1Li pl-productShow1LiLast" onclick="pl_goOther(this)">-->
+                            <!--<p><img src="../img/product2.jpg"/></p>-->
+                            <!--<p class="pl-productShow1LiWord">笔记本</p>-->
+                        <!--</li>-->
+                        <!--<li class="pl-productShow1Li" onclick="pl_goOther(this)">-->
+                            <!--<p><img src="../img/product.jpg"/></p>-->
+                            <!--<p class="pl-productShow1LiWord">手机</p>-->
+                        <!--</li>-->
+                        <!--<li class="pl-productShow1Li" onclick="pl_goOther(this)">-->
+                            <!--<p><img src="../img/product2.jpg"/></p>-->
+                            <!--<p class="pl-productShow1LiWord">笔记本</p>-->
+                        <!--</li>-->
+                        <!--<div class="clear"></div>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="footer">
+</div>
+</body>
+</html>

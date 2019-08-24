@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>更换手机绑定</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../base/css/amazeui.min.css?v=2017.8.3"/>
+    <link rel="stylesheet" href="../base/css/base.css?v=2017.8.3"/>
+    <link rel="stylesheet" href="../css/headerAndFooter.css?v=2017.8.3"/>
+    <link rel="stylesheet" href="../css/login2.css?v=2017.2.15"/>
+    <script type="text/javascript" src="../base/js/jquery-1.7.1.min.js?v=2017.8.3"></script>
+    <script type="text/javascript" src="../base/js/amazeui.min.js?v=2017.8.3"></script>
+    <script type="text/javascript" src="../base/js/Function.js?v=2017.8.3"></script>
+    <script type="text/javascript" src="../base/layer.mobile-v2.0/layer_mobile/layer.js?v=2017.8.3"></script>
+    <script type="text/javascript" src="../js/headerAndFooter.js?v=2017.8.3"></script>
+    <script type="text/javascript" src="../base/js/template.js?v=2017.8.5"></script>
+    <script type="text/javascript" src="../js/wxReturn.js"></script>
+    <script type="text/javascript" src="../js/login2.js?v=2017.8.4"></script>
+</head>
+<body>
+<div class="header">
+
+</div>
+<div class="section">
+    <div class="l-prompt">
+        <div>温馨提示：</div>
+        <div class="l-promptPrompt">尊敬的客户，为了保障您的权益，请绑定您的手机号！</div>
+        <div class="clear"></div>
+    </div>
+    <div class="l-login">
+        <!--旧手机号码-->
+        <div class="l-loginName">
+            <div class="l-loginNameT">旧手机号码</div>
+            <div class="l-loginNameB">
+                <input class="l-loginOldUser" type="tel" autocomplete="off" disabled maxlength="11"/>
+            </div>
+        </div>
+        <!--手机号码-->
+        <div class="l-loginName">
+            <div class="l-loginNameT">新手机号码</div>
+            <div class="l-loginNameB">
+                <input class="l-loginUser" type="tel" autocomplete="off" placeholder="请输入手机号码" maxlength="11"/>
+            </div>
+        </div>
+        <!--验证码-->
+        <div class="l-Verification">
+            <div class="l-loginNameT">验证码</div>
+            <div class="l-VerificationB">
+                <!--<img src="../img/pass.png" class="l-loginPhone"/>-->
+                <input class="l-Verifications fl" type="tel" autocomplete="off" placeholder="请输入验证码" maxlength="6"/>
+                <span class="l-getCode fr" onclick="getCode()">获取验证码</span>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!--绑定-->
+        <div class="l-enter" onclick="enters(this)">确定绑定</div>
+    </div>
+    <div class="l-bottom">
+        <div class="l-bottom1">说明：</div>
+        <div class="l-bottom1">1、公众号客户验证手机一次即可。</div>
+        <div class="l-bottom2">2、如果您还未关注，请立刻关注我们！</div>
+        <div class="l-bottom2">3、1小时内只能获取5次验证码！</div>
+        <div class="l-bottom2">4、绑定手机号码即表示您同意并愿意遵守魅族用户协议及隐私政策！</div>
+    </div>
+</div>
+<div class="footer">
+</div>
+</body>
+</html>

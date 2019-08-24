@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>宁波魅族数码</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../base/css/amazeui.min.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../base/css/base.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../base/js/need/layer.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../css/headerAndFooter.css?v=2017.9.27"/>
+    <link rel="stylesheet" href="../css/index.css?v=2017.9.25"/>
+    <script type="text/javascript"  src="../base/js/jquery-1.7.1.min.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/amazeui.min.js?v=2017.6.19"></script>
+    <script type="text/javascript" src="../base/js/jquery.event.drag-1.5.min.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/jquery.touchSlider.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/layer.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/Function.js?v=2017.9.25"></script>
+    <script type="text/javascript"  src="../base/js/template.js?v=2017.9.25"></script>
+    <script type="text/javascript"  src="../js/headerAndFooter.js?v=2017.9.27"></script>
+    <script type="text/javascript" src="../js/wxReturn1.js"></script>
+    <script type="text/javascript"  src="../js/index.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+</head>
+<body>
+<div class="header">
+    <!--搜索-->
+    <div class="i-searchs">
+        <div class="i-search">
+            <a href="index.html" class="fl"><img src="" class="i-logo"/></a>
+            <input class="i-searchInput fl" onclick="i_search(this)" placeholder="搜索商品名称"/>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <!--导航栏-->
+    <!--<div class="i-nav">-->
+    <!--<ul class="i-navUl">-->
+    <!--<li class="i-navLi fl">推荐</li>-->
+    <!--<li class="i-navLi fl">手机</li>-->
+    <!--<li class="i-navLi fl">配件</li>-->
+    <!--<li class="i-navLi fl">影音</li>-->
+    <!--<li class="i-navLi fl">智能数码</li>-->
+    <!--<li class="i-navLi fl">智能数码</li>-->
+    <!--<li class="i-navLi fl">智能数码</li>-->
+    <!--<li class="i-navLi fl">智能数码</li>-->
+    <!--<li class="i-navLi fl">智能数码</li>-->
+    <!--<li class="i-navLi fl">智能数码</li>-->
+    <!--<li class="i-navLi fl">智能数码</li>-->
+    <!--<li class="i-navLi fl">智能数码</li>-->
+    <!--<li class="i-navLi fl">智能数码</li>-->
+    <!--<li class="i-navLi fl">智能数码</li>-->
+    <!--<li class="i-navLi i-navLiLast fl">智能数码</li>-->
+    <!--<div class="clear"></div>-->
+    <!--</ul>-->
+    <!--</div>-->
+    <!--首页轮播图-->
+    <div class="i-banner">
+        <div class="main_visual">
+            <div class="flicking_con i-banner1As">
+                <!--<a href="#">1</a>-->
+                <!--<a href="#">2</a>-->
+                <!--<a href="#">3</a>-->
+                <!--<a href="#">4</a>-->
+            </div>
+            <div class="main_image">
+                <ul class="i-banner1Ul">
+                    <!--<li><a href=""><img class="img_1" src="../img/i-banner.png"/></a></li>-->
+                    <!--<li><a href=""><img class="img_2" src="../img/i-banner.png"/></a></li>-->
+                    <!--<li><a href=""> <img class="img_3" src="../img/i-banner.png"/></a></li>-->
+                    <!--<li><a href=""><img class="img_4" src="../img/i-banner.png"/></a></li>-->
+                </ul>
+                <a href="javascript:;" id="btn_prev"></a>
+                <a href="javascript:;" id="btn_next"></a>
+            </div>
+        </div>
+        <!--轮播结束-->
+    </div>
+    <!--商场早报-->
+    <div class="i-news">
+        <div class="i-newsLeft fl">
+           商城早报
+        </div>
+        <div class="i-newsRight fl">
+            <ul class="i-newsRightUl">
+                <!--<li class="i-newsRightLi">魅蓝6,全新发布,重塑经典设计,魅族商城售699元起!</li>-->
+                <!--<li class="i-newsRightLi">魅蓝6,全新发布,重塑经典设计,魅族商城售699元起!</li>-->
+                <!--<li class="i-newsRightLi">魅蓝6,全新发布,重塑经典设计,魅族商城售699元起!</li>-->
+                <!--<li class="i-newsRightLi">魅蓝6,全新发布,重塑经典设计,魅族商城售699元起!</li>-->
+                <!--<li class="i-newsRightLi">魅蓝6,全新发布,重塑经典设计,魅族商城售699元起!</li>-->
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--产品介绍-->
+    <div class="i-nowProduct">
+        <div class="i-nowProductImgT">
+            <img/>
+        </div>
+        <div class="i-nowProductImgB">
+            <!--<div class="i-nowProductL">-->
+                <!--<div class="i-nowProductLB">-->
+                    <!--<img class="i-nowProductImg" src="../img/i-nowProduct1.png"/>-->
+                    <!--<div class="i-nowTitle">PRO&nbsp;7</div>-->
+                    <!--<div class="i-nowAbstract">创新画屏&nbsp;灵犀相通</div>-->
+                    <!--<div class="i-nowProductLF">-->
+                        <!--<span class="i-nowPriceTitle">¥</span><span class="i-nowPrice">2880</span><span class="i-nowPriceTitle">起</span>-->
+                        <!--<span class="i-nowBuy" onclick="i_buyNow(this)">立即购买</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="i-nowProductL i-nowProductR">-->
+                <!--<div class="i-nowProductLB">-->
+                    <!--<img class="i-nowProductImg" src="../img/i-nowProduct2.png"/>-->
+                    <!--<div class="i-nowTitle">PRO&nbsp;7Plus</div>-->
+                    <!--<div class="i-nowAbstract">高清2K屏&nbsp;双屏双摄高运存</div>-->
+                    <!--<div class="i-nowProductLF">-->
+                        <!--<span class="i-nowPriceTitle">¥</span><span class="i-nowPrice">2880</span><span class="i-nowPriceTitle2">起</span>-->
+                        <!--<span class="i-nowBuy" onclick="i_buyNow(this)">立即购买</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="clear"></div>-->
+        </div>
+    </div>
+    <!--现时秒杀-->
+    <div class="i-limitedSpikes">
+        <div class="i-limitedSpike">
+            <div class="i-limitedSpikeT">
+                <div class="i-limitedSpikeTL">限时秒杀</div>
+                <div class="i-limitedSpikeTR">
+                    <span class="i-limitedSpikeTRSpan">距下一场</span>
+                    <img src="../img/0.png" class="i-limitedSpikeTRHour1 i-limitedSpikeTRImgs"/>
+                    <img src="../img/0.png"  class="i-limitedSpikeTRHour2 i-limitedSpikeTRImgs"/>
+                    <img src="../img/0_1.png"  class="i-limitedSpikeTRHour3 i-limitedSpikeTRImgs"/>
+                    <img src="../img/0_1.png"  class="i-limitedSpikeTRHour4 i-limitedSpikeTRImgs"/>
+                    <img src="../img/0_2.png"  class="i-limitedSpikeTRHour5 i-limitedSpikeTRImgs"/>
+                    <img src="../img/0_2.png"  class="i-limitedSpikeTRHour6 i-limitedSpikeTRImgs"/>
+
+                    <!--<span class="i-limitedSpikeTRHour"></span>-->
+                    <!--<span class="i-limitedSpikeTRMin"></span>-->
+                    <!--<span class="i-limitedSpikeTRSe"></span>-->
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="i-limitedSpikeB">
+                <ul class="i-limitedSpikeBUl" onclick="goFlash(this)">
+                    <!--<li class="i-limitedSpikeBLi fl">-->
+                        <!--<img class="i-limitedSpikeBLiImg" src="../img/i-limitedSpikeBLi1.png"/>-->
+                        <!--<p class="i-limitedSpikeBLiName">魅族EP52蓝牙耳机</p>-->
+                        <!--&lt;!&ndash;<p class="i-limitedSpikeBLiAbstract">新品到货&nbsp;限量抢购</p>&ndash;&gt;-->
+                        <!--<p class="i-limitedSpikeBLiBuy">-->
+                            <!--<span class="i-limitedSpikeBLiStyle">新品</span>-->
+                            <!--<span class="i-limitedSpikeBLiPrice">¥29999</span>-->
+                        <!--</p>-->
+                    <!--</li>-->
+                    <!--<li class="i-limitedSpikeBLi fl">-->
+                        <!--<img class="i-limitedSpikeBLiImg" src="../img/i-limitedSpikeBLi1.png"/>-->
+                        <!--<p class="i-limitedSpikeBLiName">魅族EP52蓝牙耳机</p>-->
+                        <!--&lt;!&ndash;<p class="i-limitedSpikeBLiAbstract">新品到货&nbsp;限量抢购</p>&ndash;&gt;-->
+                        <!--<p class="i-limitedSpikeBLiBuy">-->
+                            <!--<span class="i-limitedSpikeBLiStyle">新品</span>-->
+                            <!--<span class="i-limitedSpikeBLiPrice">¥29999</span>-->
+                        <!--</p>-->
+                    <!--</li>-->
+                    <!--<li class="i-limitedSpikeBLi fl">-->
+                        <!--<img class="i-limitedSpikeBLiImg" src="../img/i-limitedSpikeBLi1.png"/>-->
+                        <!--<p class="i-limitedSpikeBLiName">魅族EP52蓝牙耳机</p>-->
+                        <!--&lt;!&ndash;<p class="i-limitedSpikeBLiAbstract">新品到货&nbsp;限量抢购</p>&ndash;&gt;-->
+                        <!--<p class="i-limitedSpikeBLiBuy">-->
+                            <!--<span class="i-limitedSpikeBLiStyle">新品</span>-->
+                            <!--<span class="i-limitedSpikeBLiPrice">¥29999</span>-->
+                        <!--</p>-->
+                    <!--</li>-->
+                    <!--<li class="i-limitedSpikeBLi fl">-->
+                        <!--<img class="i-limitedSpikeBLiImg" src="../img/i-limitedSpikeBLi1.png"/>-->
+                        <!--<p class="i-limitedSpikeBLiName">魅族EP52蓝牙耳机</p>-->
+                        <!--&lt;!&ndash;<p class="i-limitedSpikeBLiAbstract">新品到货&nbsp;限量抢购</p>&ndash;&gt;-->
+                        <!--<p class="i-limitedSpikeBLiBuy">-->
+                            <!--<span class="i-limitedSpikeBLiStyle">新品</span>-->
+                            <!--<span class="i-limitedSpikeBLiPrice">¥29999</span>-->
+                        <!--</p>-->
+                    <!--</li>-->
+                    <!--<li class="i-limitedSpikeBLi i-limitedSpikeBLiLast fl">-->
+                        <!--<img class="i-limitedSpikeBLiImg" src="../img/i-limitedSpikeBLi1.png"/>-->
+                        <!--<p class="i-limitedSpikeBLiName">魅族EP52蓝牙耳机</p>-->
+                        <!--&lt;!&ndash;<p class="i-limitedSpikeBLiAbstract">新品到货&nbsp;限量抢购</p>&ndash;&gt;-->
+                        <!--<p class="i-limitedSpikeBLiBuy">-->
+                            <!--<span class="i-limitedSpikeBLiStyle">新品</span>-->
+                            <!--<span class="i-limitedSpikeBLiPrice">¥29999</span>-->
+                        <!--</p>-->
+                    <!--</li>-->
+                    <!--<div class="clear"></div>-->
+                </ul>
+            </div>
+        </div>
+        <div class="i-limitedSpikeF"></div>
+    </div>
+    <!--热卖单品-->
+    <div class="i-hotSale">
+        <div class="i-hotSaleT">
+            热卖单品
+        </div>
+        <!--<div class="i-hotSaleB i-hotSaleB1">-->
+            <!--<div class="i-hotSaleBL fl">-->
+                <!--<img class="i-hotSaleImg" src="../img/i-hotSale.png">-->
+            <!--</div>-->
+            <!--<div class="i-hotSaleBR fr">-->
+                <!--<div class="i-hotSaleBRName">-->
+                    <!--魅蓝&nbsp;5s-->
+                <!--</div>-->
+                <!--<div class="i-hotSaleBRAbstract">-->
+                    <!--32G版限时领券立减50元-->
+                <!--</div>-->
+                <!--<div class="i-hotSaleBRMoney">-->
+                    <!--<span class="i-hotSaleBRMoneyStyle">¥</span>-->
+                    <!--<span class="i-hotSaleBRPrice">999</span>-->
+                    <!--<span class="i-hotSaleBRMoneyStyle2">起</span>-->
+                <!--</div>-->
+                <!--<div class="i-hotSaleBuyNows">-->
+                    <!--<span class="i-hotSaleBuyNow" onclick="i_buyNow(this)">立即购买</span>-->
+                    <!--&lt;!&ndash;<img src="../img/i-hotSaleBuy.png" class="i-hotSaleBuyNowsImg"/>&ndash;&gt;-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="clear"></div>-->
+        <!--</div>-->
+        <!--<div class="i-hotSaleB i-hotSaleB2">-->
+            <!--<div class="i-hotSaleBL fl">-->
+                <!--<img class="i-hotSaleImg" src="../img/i-hotSale.png">-->
+            <!--</div>-->
+            <!--<div class="i-hotSaleBR fr">-->
+                <!--<div class="i-hotSaleBRName">-->
+                    <!--魅蓝&nbsp;5s-->
+                <!--</div>-->
+                <!--<div class="i-hotSaleBRAbstract">-->
+                    <!--32G版限时领券立减50元-->
+                <!--</div>-->
+                <!--<div class="i-hotSaleBRMoney">-->
+                    <!--<span class="i-hotSaleBRMoneyStyle">¥</span>-->
+                    <!--<span class="i-hotSaleBRPrice">999</span>-->
+                    <!--<span class="i-hotSaleBRMoneyStyle2">起</span>-->
+                <!--</div>-->
+                <!--<div class="i-hotSaleBuyNows">-->
+                    <!--<span class="i-hotSaleBuyNow" onclick="i_buyNow(this)">立即购买</span>-->
+                    <!--&lt;!&ndash;<img src="../img/i-hotSaleBuy.png" class="i-hotSaleBuyNowsImg"/>&ndash;&gt;-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="clear"></div>-->
+        <!--</div>-->
+        <!--<div class="i-hotSaleB i-hotSaleB2">-->
+            <!--<div class="i-hotSaleBL fl">-->
+                <!--<img class="i-hotSaleImg" src="../img/i-hotSale.png">-->
+            <!--</div>-->
+            <!--<div class="i-hotSaleBR fr">-->
+                <!--<div class="i-hotSaleBRName">-->
+                    <!--魅蓝&nbsp;5s-->
+                <!--</div>-->
+                <!--<div class="i-hotSaleBRAbstract">-->
+                    <!--32G版限时领券立减50元-->
+                <!--</div>-->
+                <!--<div class="i-hotSaleBRMoney">-->
+                    <!--<span class="i-hotSaleBRMoneyStyle">¥</span>-->
+                    <!--<span class="i-hotSaleBRPrice">999</span>-->
+                    <!--<span class="i-hotSaleBRMoneyStyle2">起</span>-->
+                <!--</div>-->
+                <!--<div class="i-hotSaleBuyNows">-->
+                    <!--<span class="i-hotSaleBuyNow" onclick="i_buyNow(this)">立即购买</span>-->
+                    <!--&lt;!&ndash;<img src="../img/i-hotSaleBuy.png" class="i-hotSaleBuyNowsImg"/>&ndash;&gt;-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="clear"></div>-->
+        <!--</div>-->
+        <!--<div class="i-hotSaleB">-->
+            <!--<div class="i-hotSaleBL fl">-->
+                <!--<img class="i-hotSaleImg" src="../img/i-hotSale.png">-->
+            <!--</div>-->
+            <!--<div class="i-hotSaleBR fr">-->
+                <!--<div class="i-hotSaleBRName">-->
+                    <!--魅蓝&nbsp;5s-->
+                <!--</div>-->
+                <!--<div class="i-hotSaleBRAbstract">-->
+                    <!--32G版限时领券立减50元-->
+                <!--</div>-->
+                <!--<div class="i-hotSaleBRMoney">-->
+                    <!--<span class="i-hotSaleBRMoneyStyle">¥</span>-->
+                    <!--<span class="i-hotSaleBRPrice">999</span>-->
+                    <!--<span class="i-hotSaleBRMoneyStyle2">起</span>-->
+                <!--</div>-->
+                <!--<div class="i-hotSaleBuyNows">-->
+                    <!--<span class="i-hotSaleBuyNow" onclick="i_buyNow(this)">立即购买</span>-->
+                    <!--&lt;!&ndash;<img src="../img/i-hotSaleBuy.png" class="i-hotSaleBuyNowsImg"/>&ndash;&gt;-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="clear"></div>-->
+        <!--</div>-->
+        <!--<div class="i-hotSaleB">-->
+            <!--<div class="i-hotSaleBL fl">-->
+                <!--<img class="i-hotSaleImg" src="../img/i-hotSale.png">-->
+            <!--</div>-->
+            <!--<div class="i-hotSaleBR fr">-->
+                <!--<div class="i-hotSaleBRName">-->
+                    <!--魅蓝&nbsp;5s-->
+                <!--</div>-->
+                <!--<div class="i-hotSaleBRAbstract">-->
+                    <!--32G版限时领券立减50元-->
+                <!--</div>-->
+                <!--<div class="i-hotSaleBRMoney">-->
+                    <!--<span class="i-hotSaleBRMoneyStyle">¥</span>-->
+                    <!--<span class="i-hotSaleBRPrice">999</span>-->
+                    <!--<span class="i-hotSaleBRMoneyStyle2">起</span>-->
+                <!--</div>-->
+                <!--<div class="i-hotSaleBuyNows">-->
+                    <!--<span class="i-hotSaleBuyNow" onclick="i_buyNow(this)">立即购买</span>-->
+                    <!--&lt;!&ndash;<img src="../img/i-hotSaleBuy.png" class="i-hotSaleBuyNowsImg"/>&ndash;&gt;-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="clear"></div>-->
+        <!--</div>-->
+    </div>
+    <!--官方品质服务-->
+    <div class="i-service">
+        <div class="i-serviceT">
+            <img class="i-serviceTImg"/><span class="i-serviceTWord"></span>
+        </div>
+        <div class="i-serviceB">
+            <ul class="i-serviceBUl">
+                <!--<li>-->
+                    <!--<img src="../img/i-sf.png" class="i-serviceBImg1"/>-->
+                    <!--<span class="i-serviceBName1">顺丰包邮</span>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<img src="../img/i-repair.png" class="i-serviceBImg1"/>-->
+                    <!--<span class="i-serviceBName1">1年免费保修</span>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<img src="../img/i-joins.png" class="i-serviceBImg1"/>-->
+                    <!--<span class="i-serviceBName1">线下体验店</span>-->
+                <!--</li>-->
+                <!--<div class="clear"></div>-->
+            </ul>
+        </div>
+    </div>
+    <!--魅族首页底部-->
+    <div class="i-footer">
+        <img src="../img/logo2.png"/>
+        <div>
+            不变的梦想，追求源于热爱
+        </div>
+    </div>
+</div>
+<div class="footer">
+
+</div>
+</body>
+</html>

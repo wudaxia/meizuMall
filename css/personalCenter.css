@@ -1,0 +1,143 @@
+body{
+    background-color: #F5F5F5;
+}
+/*我的信息*/
+.pc-userInfos{
+    background: url("../img/pc-banner.png") center 0 #3bb4f2;
+    background-size: auto 100%;
+    padding:15px 5% ;
+}
+.pc-userImg{
+    border-radius: 50%;
+    width: 48px;
+    margin-right: 3%;
+}
+.pc-userInfo{
+    color: #FFFFFF;
+}
+.pc-userInfo{
+    width: 80%;
+}
+.pc-userName{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    float: left;
+    margin-top: 5px;
+    line-height: 20px;
+}
+.pc-vip{
+    font-size: 12px;
+    border-radius: 10px;
+    background-color: #aadaf3;
+    display: inline-block;
+    margin-top: 3px;
+    float: left;
+    line-height: 12px;
+    padding: 3px 7px;
+    color: #2f88c0;
+}
+.pc-vipImg{
+    width: 13px;
+    margin-right:3px;
+    margin-top: -3px;
+}
+/*我的订单*/
+.pc-order{
+    background-color: #FFFFFF;
+}
+.pc-orderT,.pc-orderB{
+    padding: 14px 5%;
+    font-size: 14px;
+    line-height: 14px;
+}
+.pc-orderT{
+    color: #212121;
+}
+.pc-orderTR{
+    float: right;
+    font-size: 12px;
+    width: 28%;
+    text-align: right;
+    color: #9A9A9A;
+}
+.pc-right{
+    height: 15px;
+    margin-top: -2px;
+    margin-left: 5%;
+}
+.pc-orderB{
+    border-top:1px solid #E4E4E4;
+}
+.pc-orderBLi{
+    display: inline-block;
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+    font-size: 13px;
+    color: #444444;
+}
+.pc-orderBLiImg img{
+    height: 21px;
+    width: 21px;
+    margin: 0 0 8px 0;
+}
+.pc-orderBLiNum{
+    position: absolute;
+    background-color: #3bb4f2;
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    font-size: 8px;
+    text-align: center;
+    line-height: 14px;
+    top: -4px;
+    right: 28%;
+}
+/*更多按钮链接*/
+.pc-active{
+    margin-top: 8px;
+}
+.pc-vipGo{
+    background-color: #FFFFFF;
+    width: 100%;
+    font-size: 15px;
+    padding: 0 0 0 5%;
+    line-height: 25px;
+    color: #262626;
+}
+.pc-vipGoImg{
+    width: 8%;
+    margin-right: 5%;
+    padding:9px 0 9px 0;
+    float: left;
+}
+.pc-right2{
+    margin-top: 6px;
+    height: 15px;
+    margin-right: 5%;
+}
+.pc-vipGoName{
+    border-bottom: 1px solid #E6E6E6;
+    padding: 9px 0 9px 0;
+    display: inline-block;
+    float: left;
+    width: 87%;
+}
+.pc-vipGoNameLast{
+    border: 0;
+}
+.pc-call{
+    color: #262626;
+}
+.pc-middleImg{
+    width: 100%;
+}
+.pc-active2{
+    margin-bottom: 8px;
+}

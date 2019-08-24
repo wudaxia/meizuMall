@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改我的地址</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../base/css/amazeui.min.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../base/css/base.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../base/js/need/layer.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../base/address/dialog.css?v=2017.10.11"/>
+    <link rel="stylesheet" href="../base/address/mobile-select-area.css?v=2017.10.11"/>
+    <link rel="stylesheet" href="../css/headerAndFooter.css?v=2017.9.27"/>
+    <link rel="stylesheet" href="../css/addAddress.css?v=2017.10.11"/>
+    <script type="text/javascript"  src="../base/js/jquery-1.7.1.min.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/amazeui.min.js?v=2017.6.19"></script>
+    <script type="text/javascript" src="../base/js/jquery.touchSlider.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/layer.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/address/dialog.js?v=2017.10.11"></script>
+    <script type="text/javascript" src="../base/js/Function.js?v=2017.9.25"></script>
+    <script type="text/javascript"  src="../base/js/template.js?v=2017.9.25"></script>
+    <script type="text/javascript"  src="../js/headerAndFooter.js?v=2017.9.27"></script>
+    <script type="text/javascript" src="../base/address/mobile-select-area.js?v=2017.10.11"></script>
+    <script type="text/javascript" src="../js/wxReturn.js"></script>
+    <script type="text/javascript"  src="../js/editAddress.js?v=2017.10.11"></script>
+</head>
+<body>
+<div class="header"></div>
+<div class="section">
+    <!--姓名-->
+    <div class="aa-writeInfo">
+        <span class="aa-writeInfoL fl">收货人</span>
+        <input class="aa-writeInfoInput fl aa-userName" type="text" autocomplete="off" value=""/>
+        <div class="clear"></div>
+    </div>
+    <!--联系电话-->
+    <div class="aa-writeInfo">
+        <span class="aa-writeInfoL fl">联系电话</span>
+        <input class="aa-writeInfoInput fl aa-iPhone" type="tel" autocomplete="off" value=""/>
+        <div class="clear"></div>
+    </div>
+    <!--所在地区-->
+    <div class="aa-writeInfo">
+        <span class="aa-writeInfoL fl">所在地区</span>
+        <input class="aa-writeInfoInput fl aa-address" type="text" placeholder="请选择" autocomplete="off" id="address" value=""/>
+        <img src="../img/right.png" class="aa-right fr"/>
+        <div class="clear"></div>
+    </div>
+    <!--详细地址-->
+    <div class="aa-writeInfo">
+        <textarea class="aa-writeInfoText aa-addressBody" placeholder="请填写详细地址，不少于5个字">学院路899号</textarea>
+    </div>
+    <!--设为默认-->
+    <div class="aa-writeInfo">
+        <span class="aa-writeInfoL fl">设为默认</span>
+        <img src="../img/sc-noChose.png" class="aa-defaultImg fr" data-id="0" onclick="aa_default(this)"/>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="footer">
+    <div class="o-footerNav">
+        <span class="o-footerNavLi o-footerNavLi1" data-id="0" onclick="enterAddress(this)">确认更改</span>
+        <div class="clear"></div>
+    </div>
+</div>
+</body>
+</html>

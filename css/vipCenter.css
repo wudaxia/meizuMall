@@ -1,0 +1,205 @@
+body{
+    background-color: #EEEEEE;
+}
+/*轮播图*/
+/*图片轮播*/
+.vc-banner{width: 100%;text-align: center;margin: auto;}
+.main_image li img,.main_image li a {
+    display: block;
+    width: 100%;
+
+}
+.main_image li {
+    float: left;
+    width: 100%;
+}
+.main_image ul {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+.i-banner1Ul li{
+    position: absolute !important;
+}
+.main_image {
+    overflow: hidden;
+    position: relative;
+}
+div.flicking_con {
+    position: absolute;
+    bottom: 2%;
+    left: 43.4%;
+    z-index: 995;
+    width: 100%;
+    height: 21px;
+    /* margin: 0 0 0 -50px;*/
+}
+div.flicking_con1 {
+    position: absolute;
+    bottom: 2%;
+    left: 43.4%;
+    z-index: 999;
+    width: 100%;
+    height: 21px;
+    /* margin: 0 0 0 -50px;*/
+}
+.main_visual {
+    overflow: hidden;
+    position: relative;
+
+}
+
+div.flicking_con a {
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    display: block;
+    text-indent: -1000px;
+    margin-right: 2%;
+}
+div.flicking_con a.on{
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin: 0;
+    padding: 0;
+    background-color: #32B8F1;
+    border-radius: 50%;
+    display: block;
+    text-indent: -1000px;
+    margin-right: 2%;
+}
+/*我的积分*/
+.vc-myPoint,.vc-welfareT{
+    padding:0 5%;
+    font-size: 14px;
+    color: #353535;
+    line-height: 14px;
+    background-color: #FFFFFF;
+}
+.vc-myPointImg,.vc-welfareImg{
+    width: 20px;
+    padding:7px 0 13px;
+    margin-right: 5%;
+}
+.vc-myPointL{
+    width: 50%;
+    float: left;
+    margin-right: -1px;
+    border-right:1px solid #DDDDDD;
+}
+.vc-myPointR{
+    padding-left: 5%;
+    width: 50%;
+    float: right;
+}
+.vc-myPointTitle{
+    margin:8px 0 6px 0;
+}
+.vc-myPointNum {
+    margin:0 0 8px 0;
+    color: #909090;
+    font-size: 12px;
+}
+.vc-right{
+    height: 16px;
+    margin:16px 10% 18px 10%;
+}
+.vc-myPointR .vc-right{
+    margin:16px 0 18px 10%;
+}
+.vc-welfare{
+    margin-top: 10px;
+}
+.vc-welfareT{
+    border-bottom: 1px solid #EDEDED;
+}
+.vc-welfareImg{
+    padding:10px 0 10px;
+}
+.vc-welfareTName{
+    padding:13px 0;
+}
+/*优惠券列表*/
+.vc-welfareLi{
+    background-color: #FDFCFB;
+    position: relative;
+    padding-bottom: 3px;
+    padding-right: 5%;
+    display: -webkit-box;
+    box-align: center;
+    -webkit-box-align: center;
+}
+.vc-welfareLi::after{
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: 39%;
+    right: 0;
+    border-bottom: 1px solid #e4e4e4;
+}
+.vc-welfareLiLast::after{
+    content: "";
+    position: inherit  !important;
+    bottom: 0  !important;
+    left:0  !important;
+    right: 0  !important;
+    border-bottom:0 !important;
+}
+.vc-welfareLiImg{
+    width: 36%;
+    text-align: center;
+}
+.vc-welfareLiImg img{
+    width: 100%;
+    height: 100%;
+}
+.vc-welfareLiDetails{
+    width: 64%;
+    /*padding-top: 10px;*/
+    padding-left: 5%;
+    /*float: left;*/
+}
+.vc-welfareLiName{
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    color:#050202;
+    /*height: 32px;*/
+}
+.vc-welfareLiStyle{
+    color: #fbbd01;
+    font-size: 13px;
+    line-height: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
+}
+.vc-welfareLiGet{
+    margin-top: 5px;
+    color:#32B8F1;
+    font-size: 12px;
+}
+.vc-welfareLiGetNum{
+    font-size: 18px;
+    margin-right: 3px;
+}
+.o-blank{
+    margin-top: 15%;
+}
+.o-blank img{
+    height: 100px;
+}

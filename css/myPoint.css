@@ -1,0 +1,84 @@
+body{
+    background-color: #F5F5F5;
+}
+/*我的总积分*/
+.mp-sumPoint{
+    padding:10px 5%;
+    line-height: 1;
+    border-bottom: 1px solid #E4E4E4;
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.mp-sumPointT{
+    font-size: 15px;
+    width: 100%;
+    color: #212121;
+    padding:0 0 10px 0;
+}
+.mp-sumPointTR{
+    color: #33B8F1;
+    font-size: 16px;
+}
+.mp-sumPointB{
+    color: #8B8B8B;
+    font-size: 13px;
+}
+/*积分明细列表*/
+.mp-pointDetail{
+    padding:0 5%;
+    background-color: #FFFFFF;
+}
+.mp-pointLi{
+    padding:10px 0;
+    border-bottom: 1px solid #E0E0E0;
+}
+.mp-pointLiLast{
+    border-bottom: 0;
+}
+.mp-pointLiImg{
+    width: 20%;
+    margin-right: 3%;
+}
+.mp-pointLiInfo{
+    width: 55%;
+    line-height: 1;
+}
+.mp-pointLiName{
+    font-size: 14px;
+    color: #7A7879;
+    width: 100%;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 10px 0 8px;
+}
+.mp-pointLiStyleSpan{
+    display: inline-block;
+    padding: 3px 5px;
+    font-size: 12px;
+    border:1px solid #D1D1D1;
+    color: #D1D1D1;
+    border-radius: 3px;
+}
+.mp-pointLiR{
+    width: 22%;
+    color: #929292;
+    font-size: 12px;
+    margin: 8px 0 0;
+    text-align: right;
+}
+.mp-pointLiDate{
+    margin-bottom: 3px;
+}
+.mp-pointLiPoint{
+    font-size: 15px;
+    color: #33B8F1;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, SimHei, sns-serif;
+}
+.o-blank{
+    background-color: #F5F5F5;
+}
+.o-blank img{
+    height: 100px;
+}

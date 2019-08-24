@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <link href="../base/css/bootstrap.min.css?v=2017.8.22" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../base/css/amazeui.min.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../base/css/base.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../base/js/need/layer.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../css/headerAndFooter.css?v=2017.9.28"/>
+    <link rel="stylesheet" href="../css/product.css?v=2017.9.25"/>
+    <script type="text/javascript"  src="../base/js/jquery-1.7.1.min.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/amazeui.min.js?v=2017.6.19"></script>
+    <script type="text/javascript" src="../base/js/jquery.event.drag-1.5.min.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/jquery.touchSlider.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/swipe/js/pinchzoom.js?v=2017.3.4"></script>
+    <script type="text/javascript" src="../base/swipe/js/swipe.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/layer.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/Function.js?v=2017.9.25"></script>
+    <script type="text/javascript"  src="../base/js/template.js?v=2017.9.25"></script>
+    <script type="text/javascript"  src="../js/headerAndFooter.js?v=2017.9.27"></script>
+    <script type="text/javascript" src="../js/wxReturn1.js?v=2017.10.28"></script>
+    <script type="text/javascript"  src="../js/product2.js?v=2017.10.28"></script>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+</head>
+<body>
+<div class="body">
+    <div class="header"></div>
+    <div class="section">
+        <!--商品轮播图-->
+        <div class="p-banner">
+            <div class="main_visual">
+                <div class="flicking_con"></div>
+                <div class="main_image">
+                    <ul class="p-banner1Ul">
+                        <!--<li>-->
+                        <!--<img class="img_1" src="../img/product.png" onclick="img_click(this)"/>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                        <!--<img class="img_2" src="../img/product.png"  onclick="img_click(this)"/>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                        <!--<img class="img_3" src="../img/product.png"  onclick="img_click(this)"/>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                        <!--<img class="img_4" src="../img/product.png"  onclick="img_click(this)"/>-->
+                        <!--</li>-->
+                    </ul>
+                    <a href="javascript:;" id="btn_prev"></a>
+                    <a href="javascript:;" id="btn_next"></a>
+                </div>
+            </div>
+            <!--轮播结束-->
+        </div>
+        <!--商品信息-->
+        <div class="p-info">
+            <!--商品介绍-->
+            <div class="p-infoH">
+                <div class="p-infoNames"><span class="p-infoNameL disn"></span><span class="p-infoName"></span></div>
+                <div class="p-infoAbstract">
+                    <span class="p-infoAbstractL"></span><span class="p-infoAbstractR"></span>
+                </div>
+                <!--价格-->
+                <div class="p-infoPrice">
+                    <span class="p-infoPriceL">积分：</span><span class="p-infoPriceR"></span>
+                    <!--<s class="p-infoPriceDel"><span class="p-infoPriceL2">¥</span><span class="p-infoPriceR2"></span></s>-->
+                    <!--<span class="p-infoPriceDown">直降300元</span>-->
+                </div>
+                <!--选择-->
+                <div class="p-infoChose" onclick="p_chose(this)">
+                    <span class="p-infoChoseTtile">已选</span>
+                    <span class="p-infoChoseStyle"></span>
+                    <img src="../img/p-right.png" class="fr"/>
+                    <div class="clear"></div>
+                </div>
+                <div class="p-infoBack">
+                    <img src="../img/p-gou.png"/>
+                    <span class="p-infoBackWord">支持七天无理由退货</span>
+                </div>
+            </div>
+            <div class="p-infoM"></div>
+            <!--商品介绍-->
+            <div class="p-infoS">
+                <div class="p-infoSTitle">
+                    <span>商品详情</span>
+                </div>
+                <div class="p-infoSBody">
+                    <!--<img src="../img/p-productDetials.png"/>-->
+                </div>
+            </div>
+        </div>
+        <!--为你推荐-->
+        <div class="recommends"></div>
+        <!--<div class="recommend">-->
+        <!--<div class="recommendT">-->
+        <!--<div class="recommendTH">-->
+        <!--<img src="../img/recommend.png" class="recommendTL"/>-->
+        <!--<span class="recommendTWord">为你推荐</span>-->
+        <!--<img src="../img/recommend.png" class="recommendTR"/>-->
+        <!--</div>-->
+        <!--<div class="recommendTB">-->
+        <!--<span class="recommendTBL fl"></span>-->
+        <!--<span class="recommendTBM fl">实时推荐您的心心念念</span>-->
+        <!--<span class="recommendTBR fl"></span>-->
+        <!--<div class="clear"></div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="recommendB">-->
+        <!--<div class="recommendLi fl">-->
+        <!--<img src="../img/recommendImg.jpg"/>-->
+        <!--<div class="recommendLis">-->
+        <!--<div class="recommendLiName">魅族&nbsp;PRO&nbsp;6&nbsp;Plus</div>-->
+        <!--<div class="recommendLiPrice">-->
+        <!--<span class="recommendLiPriceL">¥</span>2399-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="recommendLi fr">-->
+        <!--<img src="../img/recommendImg.jpg"/>-->
+        <!--<div class="recommendLis">-->
+        <!--<div class="recommendLiName">魅族&nbsp;PRO&nbsp;6&nbsp;Plus</div>-->
+        <!--<div class="recommendLiPrice">-->
+        <!--<span class="recommendLiPriceL">¥</span>2399-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="recommendLi fl">-->
+        <!--<img src="../img/recommendImg.jpg"/>-->
+        <!--<div class="recommendLis">-->
+        <!--<div class="recommendLiName">魅族&nbsp;PRO&nbsp;6&nbsp;Plus</div>-->
+        <!--<div class="recommendLiPrice">-->
+        <!--<span class="recommendLiPriceL">¥</span>2399-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="recommendLi fr">-->
+        <!--<img src="../img/recommendImg.jpg"/>-->
+        <!--<div class="recommendLis">-->
+        <!--<div class="recommendLiName">魅族&nbsp;PRO&nbsp;6&nbsp;Plus</div>-->
+        <!--<div class="recommendLiPrice">-->
+        <!--<span class="recommendLiPriceL">¥</span>2399-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="clear"></div>-->
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+    <div class="footer">
+        <!--底部购买-->
+        <div class="p-footerNav">
+            <!--<div class="p-iLove">-->
+                <!--<img class="p-iLoveImg" data-chose="0" src="../img/p-love.png" data-style="0" onclick="clickNow(this)"/>-->
+                <!--<p class="p-iLoveWord" data-style="0" onclick="clickNow(this)" >喜欢</p>-->
+            <!--</div>-->
+            <!--<div class="p-shop">-->
+            <!--<img class="p-shopImg" data-chose="0" src="../img/p-shop.png" onclick="p_joinCar(this)"/>-->
+            <!--<p class="p-shopWord" onclick="p_joinCar(this)">加入购物车</p>-->
+            <!--</div>-->
+            <div class="p-joinBuy" data-style="1" onclick="clickNow(this)">立即兑换</div>
+            <!--<div class="p-joinCar" data-style="2" onclick="clickNow(this)" >加入购物车</div>-->
+
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<!--选择产品规格-->
+<div class="p-choseStyles disn">
+
+</div>
+<div class="p-choseStyle disn">
+    <div class="p-choseStyleT">
+        <img class="p-choseStyleTImg" src="../img/p-styleProducts.jpg"/>
+        <div class="p-choseStyleTBody">
+            <p class="p-choseStyleTPrice">
+                <span class="p-choseStyleTPriceL" style="font-size: 13px">积分</span>
+                <span class="p-choseStyleTPriceR"></span>
+            </p>
+            <p class="p-choseStyleTName"></p>
+            <img class="p-choseStyleDel" onclick="p_choseClose(this)" src="../img/p-choseStyleDel.png"/>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="p-choseStyleB">
+        <div class="p-choseStyleColors"></div>
+        <!--<div class="p-choseStyleColor">-->
+        <!--<div class="p-choseStyleColorT">颜色</div>-->
+        <!--<div class="p-choseStyleColorB">-->
+        <!--<span class="p-styleColor p-styleColorChose" onclick="p_choseStyle(this)">珠光白</span>-->
+        <!--<span class="p-styleColor" onclick="p_choseStyle(this)">流光金</span>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="p-choseStyleCapacity">-->
+        <!--<div class="p-choseStyleColorT">容量</div>-->
+        <!--<div class="p-choseStyleColorB">-->
+        <!--<span class="p-styleColor p-styleColorChose" onclick="p_choseStyle(this)">32GB</span>-->
+        <!--</div>-->
+        <!--</div>-->
+        <div class="p-choseStyleSum">
+            <span class="p-choseStyleSumT">购买数量</span>
+            <div class="p-choseStyleSumB">
+                <span class="p-choseStyleMinus" data-name="0" onclick="p_choseNum(this)">
+                    <img src="../img/minus.png"/>
+                </span>
+                <input  type="number" class="p-choseStyleNum" min="1" max="20" value="1"/>
+                <span class="p-choseStyleJoin" data-name="1" onclick="p_choseNum(this)">
+                    <img src="../img/join.png"/>
+                </span>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="p-choseStyleF">
+        <div class="p-choseJoinBuy" data-style="1" onclick="clickNow(this)">立即兑换</div>
+        <!--<div class="p-choseJoinCar" data-style="2" onclick="clickNow(this)">加入购物车</div>-->
+        <div class="clear"></div>
+    </div>
+</div>
+</body>
+</html>

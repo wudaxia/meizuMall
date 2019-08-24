@@ -1,0 +1,260 @@
+body{
+    background-color: #F5F5F5;
+}
+.sh-searchBox{
+    overflow: hidden;
+    background-color: #33B8F1;
+    width: 100%;
+    z-index: 1;
+    padding: 5px 0 5px 5%;
+    position: fixed;
+    top: 0;
+}
+.sh-searchInput{
+    width: 83%;
+    z-index: 9999;
+    font-size: 14px;
+    border: 1px solid #f8f8f8;
+    padding: 7px 0  5px 25px;
+    line-height: 14px;
+    /*padding-top: 1px;*/
+    border-radius: 3px;
+    background: url(../img/search2.png) no-repeat #f8f8f8 0 2px;
+    /*padding-left: 25px;*/
+}
+.sh-searchBox img{
+    position: absolute;
+    right: 18%;
+    top:12px;
+    width: 18px;
+    height: 18px;
+}
+.sh-close{
+    color: #fff;
+    width: 17%;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+    font-size: 15px;
+    position: relative;
+    top:2px;
+}
+/*以上是searchHot复制*/
+.sr-searchLunImg img{
+    width: 100%;
+    height: 104px;
+    z-index: 1;
+}
+/*.sr-fixshaiBox{
+    height: 88px;
+
+}*/
+.sr-shaixuanBox{
+    width: 100%;
+    height:35px;
+    line-height: 35px;
+    font-size: 15px;
+    background-color: #fff;
+    /*position: fixed;
+    top:40px;*/
+    border-bottom: 1px solid #ebebeb;
+}
+.sr-shaixuanBox li.active{
+    color: #33B8F1;
+}
+.icon-shai{
+    color: #c7c7c7;
+    font-size: 8px;
+}
+.am-icon-sort-asc{
+    margin-right: -7px;
+}
+.sr-shaixuan img{
+     width: 15px;
+    height: 15px;
+   margin-bottom:4px;
+}
+.sr-searchResult{
+    /*display: block;*/
+    /*overflow: hidden;*/
+    background-color: #FDFCFB;
+    /*position: relative;*/
+}
+.sr-searchResultLi{
+    background-color: #FDFCFB;
+    position: relative;
+    padding-bottom: 3px;
+    display: -webkit-box;
+    box-align: center;
+    -webkit-box-align: center;
+}
+.sr-searchResultLi::after{
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    right: 0;
+    border-bottom: 1px solid #e4e4e4;
+}
+.sr-searchResult{
+    margin-top: 8px;
+    z-index: 70;
+}
+.sr-searchResultUl{
+    padding-right: 5%;
+}
+.sr-searchImg{
+    width: 44%;
+    text-align: center;
+}
+.sr-searchIntro{
+    width: 56%;
+    /*padding-top:10px;*/
+}
+.sr-searchMar{
+    margin-left: 5%;
+  }
+.sr-searchImg img{
+    width: 100%;
+    vertical-align: middle;
+    margin:auto
+}
+.sr-searchliT{
+    font-weight: bold;
+    margin-bottom: 3px;
+    font-size: 15px;
+    line-height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /*height: 32px;*/
+}
+.sr-searchInfo{
+    color:#b7b7b7;
+    font-size: 12px;
+    line-height: 15px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+}
+.sr-cuxiao{
+    color: #33B8F1;
+
+}
+.sr-shaixuanBox li{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    float: left;
+    position: relative;
+    width: 33%;
+}
+.sr-shaixuanBox,.sr-shaiToggle,.sr-shaiToggleBox{
+    background-color: #fff;
+    overflow: hidden;
+}
+.sr-shaiToggleBox{
+    position: relative;
+    top: 0px;
+}
+.sr-shaiToggleLi{
+/*    padding-left: 1rem;
+    padding-right: 1rem;*/
+    float: left;
+    position: relative;
+    overflow: hidden;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.g-blue{color: #33B8F1}
+.sr-searchLable{padding: 1px 6px;font-size: 10px}
+.sr-zengLable{color: #fff;background-color: #ec493b;margin-right: 4px}
+.sr-fenqiLab{color: #fff;background-color: #3c91e5}
+.sr-shaiToggleLi span{
+    display: block;
+    padding: 4px 12px;
+    border: 1px solid #ebebeb ;
+    background-color: #F7F7F7;
+    font-size: 13px;
+}
+.sr-shaiToggle{
+    padding: 10px 5%;
+    border-bottom: 1px solid #ebebeb;
+    overflow: hidden;
+}
+.sr-shaiToggle ul{
+    width: 100%;
+    overflow: hidden;
+}
+.sr-btnok{
+    height: 35px;
+    line-height: 35px;
+    z-index: 99999;
+    background-color: #fff;
+    width: 100%;
+}
+.sr-fixshaiBox{
+    background-color: #fff;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    z-index: 99999;
+}
+.sr-priceL{
+    font-size: 12px;
+}
+.sr-prices{
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.header{
+    height: 70px;
+}
+.footer{
+    height: 0;
+}
+.sr-shaiToggleLiChose span,.sr-shaiToggleLiChose1 span{
+    background-color: #33B8F1;
+    color: #FFFFFF;
+}
+.sr-searchResultLiLast::after{
+    content: "";
+    position: inherit  !important;
+    bottom: 0  !important;
+    left:0  !important;
+    right: 0  !important;
+    border-bottom:0 !important;
+}
+.sr-priceUp,.sr-priceDown{
+    width: 4px;
+    height: 4px;
+    display: inline-block;
+    position: absolute;
+    left:3px;
+}
+.sr-priceUp{
+    border: 4px solid #FFFFFF;
+    border-bottom-color: #DCDCDC;
+    top: -2px;
+}
+.sr-priceDown{
+    border: 4px solid #FFFFFF;
+    border-top-color: #DCDCDC;
+    top: 10px;
+}
+.sr-priceUD{
+    position: relative;
+}
+.sr-priceChose{
+    border-top-color: #33B8F1;
+}
+.sr-priceChose2{
+    border-bottom-color: #33B8F1;
+}
+.o-blank{background-color: #F5F5F5;margin: 15% auto;}

@@ -1,0 +1,71 @@
+body{
+    background-color: #EEEEEE;
+}
+/*收货地址列表*/
+.al-li{
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+}
+/*我的信息*/
+/*姓名、电话*/
+.al-liT{
+    padding: 11px 5%;
+    font-size: 14px;
+    color: #3D4245;
+    line-height: 1.3;
+    border-bottom: 1px solid #EEEEEE;
+}
+.al-liAddress{
+    margin-top: 11px;
+}
+/*操作*/
+.al-liB{
+    padding:12px 5%;
+    line-height: 14px;
+    font-size: 12px;
+}
+.al-liDefaultImg,.al-liEditImg,.al-liDelImg{
+    width: 16px;
+    margin-right: 4px;
+}
+.al-liDefaultImg{
+    margin-top: -1px;
+}
+.al-liDelImg{
+    margin-left: 10px;
+    margin-top: -2px;
+}
+.al-liEditImg{
+    width: 18px;
+    margin-top: -3px;
+}
+/*默认选中*/
+.al-liDefaultWordChose{
+    color:#33B8F1;
+}
+/*底部*/
+.o-footerNav{
+    position: fixed;
+    background-color: #F8F8F8;
+    z-index: 20;
+    bottom: 0;
+    width: 100%;
+    height: 51px;
+    line-height: 51px;
+}
+.o-footerNavLi{
+    display: inline-block;
+    float: left;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    color: #9D9D9D;
+    background-color: #EEEEEE;
+}
+.o-footerNavLi1{
+    background-color: #32B7EF;
+    color: #FFFFFF;
+}
+.o-blank img{
+    height: 100px;
+}

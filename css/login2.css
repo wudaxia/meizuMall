@@ -1,0 +1,51 @@
+/*温馨提示*/
+.l-prompt{color: #FF0036;text-align: left;padding: 0 5%;margin-top:10px;font-size: 15px;line-height: 1.2;}
+.l-promptPrompt{text-indent:2em;font-size: 15px;margin-top: 5px;}
+/*绑定手机*/
+.l-login{
+    padding :0 5%;
+}
+.l-loginName{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.l-loginNameT{
+    margin-bottom: 10px;
+}
+.l-loginNameB,.l-VerificationB{
+    width: 100%;
+    border: 1px solid #ECECEC;
+    border-radius: 8px;
+    padding:0 15px;
+}
+.l-getCode{
+    font-size: 14px;
+    line-height: 38px;
+    color: #33B8F1;
+}
+.l-loginUser,.l-Verifications,.l-loginOldUser{
+    border:0;
+    line-height: 38px;
+    font-size: 14px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+.l-Verifications{
+    width: 70%;
+}
+.l-enter{
+    background-color: #33B8F1;
+    color: #FFFFFF;
+    line-height: 35px;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+.l-loginNameT{
+    font-size: 14px;
+    line-height: 1;
+}
+/*底部说明*/
+.l-bottom{padding: 0 5%;font-size: 13px;margin:20px auto 0;color: #B0B0B0;line-height: 1.4}

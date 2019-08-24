@@ -1,0 +1,67 @@
+body{
+    background-color: #F5F5F5;
+}
+.section{
+    background-color: #FFFFFF;
+}
+.pi-userInfoLi{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #F2F2F2;
+    margin-left:5%;
+    padding-right: 5%;
+    font-size: 14px;
+}
+.pi-headImg{
+    width: 34px;
+    height: 34px;
+    border-radius:50%;
+    vertical-align: middle;
+    margin-top: 8px;
+}
+.pi-right{
+    height: 10px;
+    margin-top:20px;
+    margin-left: 2%;
+}
+.pi-userInfoBody{
+    text-align: center;
+    max-width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.pi-userInfoTitle{
+    display: inline-block;
+    min-width: 16px;
+}
+.sc-productListCheck{
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/sc-noChose.png") no-repeat;
+    background-size: 100%;
+    background-color: #FFFFFF;
+}
+.sc-productListCheckChose{
+    background: url("../img/sc-chose.png") no-repeat;
+    background-size: 100%;
+}
+.pie-userInfoSexSpan,.userInfoSexSpan2{
+    margin: 0 10px 0 5px;
+    font-size: 15px;
+    position: relative;
+    top: -5px;
+}
+.pie-userInfoSexB{
+    width: 100%;
+}
+.pie-userInfoSexBL{
+    width: 50%;
+    text-align: center;
+}
+.layui-m-layerchild h3{
+    height: 50px !important;
+    line-height: 50px !important;
+}

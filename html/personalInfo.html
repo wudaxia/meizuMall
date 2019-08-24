@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的信息</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../base/css/amazeui.min.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../base/css/base.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../base/js/need/layer.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../css/headerAndFooter.css?v=2017.9.27"/>
+    <link rel="stylesheet" href="../css/personalInfo.css?v=2017.9.27"/>
+    <script type="text/javascript"  src="../base/js/jquery-1.7.1.min.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/amazeui.min.js?v=2017.6.19"></script>
+    <script type="text/javascript" src="../base/js/layer.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/Function.js?v=2017.9.25"></script>
+    <script type="text/javascript"  src="../base/js/template.js?v=2017.9.25"></script>
+    <script type="text/javascript"  src="../js/headerAndFooter.js?v=2017.9.27"></script>
+    <script type="text/javascript" src="../js/wxReturn.js"></script>
+    <script type="text/javascript"  src="../js/personalInfo.js?v=2017.9.27"></script>
+</head>
+<body>
+<div class="body">
+    <div class="header"></div>
+    <div class="section">
+        <div class="pi-userInfoLi" data-id="0" onclick="goEdit(this)">
+            <span class="pi-userInfoTitle">头像</span>
+            <img src="../img/right.png" class="pi-right fr"/>
+            <img src="" class="pi-headImg fr"/>
+            <div class="clear"></div>
+        </div>
+        <div class="pi-userInfoLi" data-id="1" onclick="goEdit(this)">
+            <span class="pi-userInfoTitle">昵称</span>
+            <img src="../img/right.png" class="pi-right  fr"/>
+            <span class="pi-userInfoBody pi-nickName  fr"></span>
+        </div>
+        <div class="pi-userInfoLi" data-id="2" onclick="goEdit(this)">
+            <span class="pi-userInfoTitle">姓名</span>
+            <img src="../img/right.png" class="pi-right  fr"/>
+            <span class="pi-userInfoBody pi-realName  fr"></span>
+        </div>
+        <div class="pi-userInfoLi" data-id="5">
+            <span class="pi-userInfoTitle">手机</span>
+            <!--<img src="../img/right.png" class="pi-right  fr"/>-->
+            <span class="pi-userInfoBody pi-phone fr"></span>
+        </div>
+        <div class="pi-userInfoLi" data-id="3" onclick="openSex(this)">
+            <span class="pi-userInfoTitle">性别</span>
+            <img src="../img/right.png" class="pi-right  fr"/>
+            <span class="pi-userInfoBody pi-sex  fr"></span>
+        </div>
+        <div class="pi-userInfoLi" data-id="4" onclick="goEdit(this)">
+            <span class="pi-userInfoTitle">生日</span>
+            <img src="../img/right.png" class="pi-right  fr"/>
+            <span class="pi-userInfoBody pi-date fr"></span>
+        </div>
+    </div>
+    <div class="footer"></div>
+</div>
+</body>
+</html>

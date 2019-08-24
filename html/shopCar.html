@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的购物车</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../base/css/amazeui.min.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../base/css/base.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../base/js/need/layer.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../css/headerAndFooter.css?v=2017.9.27"/>
+    <link rel="stylesheet" href="../css/shopCar.css?v=2017.9.25"/>
+    <script type="text/javascript"  src="../base/js/jquery-1.7.1.min.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/amazeui.min.js?v=2017.6.19"></script>
+    <script type="text/javascript" src="../base/js/jquery.event.drag-1.5.min.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/jquery.touchSlider.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/layer.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/Function.js?v=2017.9.25"></script>
+    <script type="text/javascript"  src="../base/js/template.js?v=2017.9.25"></script>
+    <script type="text/javascript"  src="../js/headerAndFooter.js?v=2017.9.27"></script>
+    <script type="text/javascript" src="../js/wxReturn.js"></script>
+    <script type="text/javascript"  src="../js/shopCar.js?v=2017.9.25"></script>
+</head>
+<body>
+<div class="header">
+    <div class="sc-carEdit">
+        <div class="sc-carEdits" onclick="sc_edit(this)" data-style="0">
+            <span class="sc-carEditing">
+                <img src="../img/sc-edit.png" class="sc-carEditImg">
+                <span class="sc-carEditWord">编辑</span>
+            </span>
+            <span class="sc-carEditOver disn">完成</span>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="sc-productDiv">
+
+    </div>
+    <div class="loadBox"></div>
+    <!--<div class="sc-productLi">-->
+        <!--<span class="sc-productListCheck sc-productListCheckChose" onclick="choseProduct(this)"></span>-->
+        <!--<img src="../img/p-styleProducts.jpg" class="sc-productListImg"/>-->
+        <!--<div class="sc-productBody">-->
+            <!--<div class="sc-productBodyName">魅蓝X&nbsp;4G+32G&nbsp;珠光白</div>-->
+            <!--<div class="sc-productBodyStyle">珠光白&nbsp;32G</div>-->
+            <!--<div class="sc-productBodySum">-->
+                <!--<div class="sc-productBodySum1">-->
+                    <!--<span class="sc-productBodySumL">¥</span>-->
+                    <!--<span class="sc-productBodyPrice">1199.584</span>-->
+                    <!--<s class="sc-productBodyDel">¥1499</s>-->
+                    <!--<div class="fr">×<span class="sc-productBodyNum">1</span></div>-->
+                <!--</div>-->
+                <!--<div class="sc-choseStyleSumB disn">-->
+                    <!--<span class="sc-choseStyleMinus" data-name="0" onclick="sc_choseNum(this)">-->
+                        <!--<img src="../img/minus.png"/>-->
+                    <!--</span>-->
+                    <!--<input  type="number" class="sc-choseStyleNum" min="1" max="20"  value="1"/>-->
+                    <!--<span class="sc-choseStyleJoin" data-name="1" onclick="sc_choseNum(this)">-->
+                        <!--<img src="../img/join.png"/>-->
+                    <!--</span>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="clear"></div>-->
+    <!--</div>-->
+    <!--<div class="sc-productLi sc-productLiLast">-->
+        <!--<span class="sc-productListCheck sc-productListCheckChose" onclick="choseProduct(this)"></span>-->
+        <!--<img src="../img/p-styleProducts.jpg" class="sc-productListImg"/>-->
+        <!--<div class="sc-productBody">-->
+            <!--<div class="sc-productBodyName">魅蓝X&nbsp;4G+32G&nbsp;珠光白</div>-->
+            <!--<div class="sc-productBodyStyle">珠光白&nbsp;32G</div>-->
+            <!--<div class="sc-productBodySum">-->
+                <!--<div class="sc-productBodySum1">-->
+                    <!--<span class="sc-productBodySumL">¥</span>-->
+                    <!--<span class="sc-productBodyPrice">1199</span>-->
+                    <!--<s class="sc-productBodyDel">¥1499</s>-->
+                    <!--<div class="fr">×<span class="sc-productBodyNum">1</span></div>-->
+                <!--</div>-->
+                <!--<div class="sc-choseStyleSumB disn">-->
+                    <!--<span class="sc-choseStyleMinus" data-name="0" onclick="sc_choseNum(this)">-->
+                        <!--<img src="../img/minus.png"/>-->
+                    <!--</span>-->
+                    <!--<input  type="number" class="sc-choseStyleNum" min="1" max="20" value="1"/>-->
+                    <!--<span class="sc-choseStyleJoin" data-name="1" onclick="sc_choseNum(this)">-->
+                        <!--<img src="../img/join.png"/>-->
+                    <!--</span>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="clear"></div>-->
+    <!--</div>-->
+    <div class="recommends"></div>
+</div>
+<div class="footer">
+    <div class="sc-footer">
+        <div class="sc-footerSum">
+            <span class="sc-footerCheck sc-footerCheckChose" onclick="choseAllProduct(this)"></span>
+            <span class="sc-footerSumAll fl">全选</span>
+            <span class="sc-footerSumMoenys">
+                <span class="fl">合计：</span>
+                <span class="sc-footerSumMoeny fl">¥<span class="sc-footerSumMoenyR">0.00</span></span>
+            </span>
+        </div>
+        <div class="sc-footerSumBuy" onclick="sc_buyProduct(this)">结算<span class="sc-footerNum"></span></div>
+        <div class="sc-footerSumDel disn" onclick="sc_edit(this)" data-style="2">删除</div>
+        <div class="clear"></div>
+    </div>
+</div>
+</body>
+</html>

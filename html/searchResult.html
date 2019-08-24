@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索结果</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../base/css/amazeui.min.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../base/css/base.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../base/js/need/layer.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../css/headerAndFooter.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../css/searchResult.css?v=2017.9.25"/>
+    <script type="text/javascript"  src="../base/js/jquery-1.7.1.min.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/amazeui.min.js?v=2017.6.19"></script>
+    <script type="text/javascript" src="../base/js/jquery.touchSlider.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/layer.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/Function.js?v=2017.9.25"></script>
+    <script type="text/javascript"  src="../base/js/template.js?v=2017.9.25"></script>
+    <script type="text/javascript"  src="../js/headerAndFooter.js?v=2017.9.27"></script>
+    <script type="text/javascript" src="../js/wxReturn1.js"></script>
+    <script type="text/javascript"  src="../js/searchResult.js?v=2017.9.29"></script>
+</head>
+<body>
+<div class="header">
+    <div class="sh-searchBox texC">
+        <input type="text"  class="sh-searchInput fl">
+        <img src="../img/close.png" class="sr-bland" onclick="sr_searchDel(this)">
+        <span class="fr sh-close" onclick="sh_goBack(this)">取消</span>
+        <span class="disn sh-searchGo" data-type="1" onclick="searchProduct()"></span>
+    </div>
+    <div class="sr-fixshaiBox">
+        <div class="sr-shaixuanBox texC ">
+            <ul>
+                <li class=" sr-zonghe active" data-id="1" onclick="shaiToggle(this)" >综合</li>
+                <li class=" sr-price" onclick="shaiToggle(this)" data-id="2">价格
+                <span class="sr-priceUD">
+                    <span class="sr-priceUp" data-id="1"></span>
+                    <span class="sr-priceDown" data-id="2"></span>
+                </span>
+                </li>
+                <li class=" sr-shaixuan" onclick="shaiToggle(this)" data-id="3">筛选<img src="../img/filter.png"></li>
+            </ul>
+        </div>
+        <!--筛选出来的div-->
+        <div class="sr-shaiToggleBox " style="display: none;">
+            <div class="sr-shaiToggle texC">
+                <ul>
+                    <li class="sr-shaiToggleLi" data-id="1" data-style="0" onclick="sr_shaiToggleLi(this)"><span>有货</span></li>
+                    <li class="sr-shaiToggleLi" data-id="2" data-style="0" onclick="sr_shaiToggleLi(this)"><span>推荐</span></li>
+                    <li class="sr-shaiToggleLi" data-id="3" data-style="0" onclick="sr_shaiToggleLi(this)"><span>热卖</span></li>
+                    <li class="sr-shaiToggleLi" data-id="4" data-style="0" onclick="sr_shaiToggleLi(this)"><span>新品</span></li></ul>
+            </div>
+            <div class="sr-btnok texC g-blue" onclick="sr_result(this)">
+                <span>确定</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="sr-searchLunImg disn">
+        <img src="../img/searchLun.png">
+    </div>
+    <div class=" sr-searchResult">
+        <ul class="sr-searchResultUl">
+            <!--<li class="sr-searchResultLi">-->
+                <!--<div class="sr-searchImg">-->
+                    <!--<img src="../img/p-styleProducts.jpg">-->
+                <!--</div>-->
+                <!--<div class="sr-searchIntro">-->
+                    <!--<div class="sr-searchMar">-->
+                        <!--<div class="sr-searchliT">米家压力IH电饭煲</div>-->
+                        <!--<div class="sr-searchInfo"><span class="sr-cuxiao">【送49元煮保鲜盒】</span>压力IH加热技术/灰铸铁粉体土层内胆/智慧啊</div>-->
+                        <!--&lt;!&ndash;<div class="sr-saleLable"><span class="sr-zengLable sr-searchLable">赠</span></div>&ndash;&gt;-->
+                        <!--<div class="g-blue"><span class="sr-priceL">¥</span><span class="sr-prices">399</span><span class="sr-priceL">起</span></div></div>-->
+                <!--</div>-->
+                <!--<div class="clear"></div>-->
+            <!--</li>-->
+            <!--<li class="sr-searchResultLi">-->
+                <!--<div class="sr-searchImg ">-->
+                    <!--<img src="../img/p-styleProducts.jpg">-->
+                <!--</div>-->
+                <!--<div class="sr-searchIntro ">-->
+                    <!--<div class="sr-searchMar">-->
+                        <!--<div class="sr-searchliT">米家压力IH电饭煲</div>-->
+                        <!--<div class="sr-searchInfo"><span class="sr-cuxiao">【送49元煮保鲜盒】</span>压力IH加热技术/灰铸铁粉体土层内胆/智慧啊</div>-->
+                        <!--&lt;!&ndash;<div class="sr-saleLable"><span class="sr-zengLable sr-searchLable">赠</span></div>&ndash;&gt;-->
+                        <!--<div class="g-blue"><span class="sr-priceL">¥</span><span class="sr-prices">399</span><span class="sr-priceL">起</span></div></div>-->
+                <!--</div>-->
+                <!--<div class="clear"></div>-->
+            <!--</li>-->
+            <!--<li class="sr-searchResultLi">-->
+                <!--<div class="sr-searchImg ">-->
+                    <!--<img src="../img/p-styleProducts.jpg">-->
+                <!--</div>-->
+                <!--<div class="sr-searchIntro ">-->
+                    <!--<div class="sr-searchMar">-->
+                        <!--<div class="sr-searchliT">米家压力IH电饭煲</div>-->
+                        <!--<div class="sr-searchInfo"><span class="sr-cuxiao">【送49元煮保鲜盒】</span>压力IH加热技术/灰铸铁粉体土层内胆/智慧啊</div>-->
+                        <!--&lt;!&ndash;<div class="sr-saleLable"><span class="sr-zengLable sr-searchLable">赠</span></div>&ndash;&gt;-->
+                        <!--<div class="g-blue"><span class="sr-priceL">¥</span><span class="sr-prices">399</span><span class="sr-priceL">起</span></div></div>-->
+                <!--</div>-->
+                <!--<div class="clear"></div>-->
+            <!--</li>-->
+            <!--<li class="sr-searchResultLi">-->
+                <!--<div class="sr-searchImg ">-->
+                    <!--<img src="../img/p-styleProducts.jpg">-->
+                <!--</div>-->
+                <!--<div class="sr-searchIntro ">-->
+                    <!--<div class="sr-searchMar">-->
+                        <!--<div class="sr-searchliT">米家压力IH电饭煲</div>-->
+                        <!--<div class="sr-searchInfo"><span class="sr-cuxiao">【送49元煮保鲜盒】</span>压力IH加热技术/灰铸铁粉体土层内胆/智慧啊</div>-->
+                        <!--&lt;!&ndash;<div class="sr-saleLable"><span class="sr-zengLable sr-searchLable">赠</span></div>&ndash;&gt;-->
+                        <!--<div class="g-blue"><span class="sr-priceL">¥</span><span class="sr-prices">399</span><span class="sr-priceL">起</span></div></div>-->
+                <!--</div>-->
+                <!--<div class="clear"></div>-->
+            <!--</li>-->
+            <!--<li class="sr-searchResultLi">-->
+                <!--<div class="sr-searchImg ">-->
+                    <!--<img src="../img/p-styleProducts.jpg">-->
+                <!--</div>-->
+                <!--<div class="sr-searchIntro ">-->
+                    <!--<div class="sr-searchMar">-->
+                        <!--<div class="sr-searchliT">米家压力IH电饭煲</div>-->
+                        <!--<div class="sr-searchInfo"><span class="sr-cuxiao">【送49元煮保鲜盒】</span>压力IH加热技术/灰铸铁粉体土层内胆/智慧啊</div>-->
+                        <!--&lt;!&ndash;<div class="sr-saleLable"><span class="sr-zengLable sr-searchLable">赠</span></div>&ndash;&gt;-->
+                        <!--<div class="g-blue"><span class="sr-priceL">¥</span><span class="sr-prices">399</span><span class="sr-priceL">起</span></div></div>-->
+                <!--</div>-->
+                <!--<div class="clear"></div>-->
+            <!--</li>-->
+            <!--<li class="sr-searchResultLi">-->
+                <!--<div class="sr-searchImg ">-->
+                    <!--<img src="../img/p-styleProducts.jpg">-->
+                <!--</div>-->
+                <!--<div class="sr-searchIntro ">-->
+                    <!--<div class="sr-searchMar">-->
+                        <!--<div class="sr-searchliT">米家压力IH电饭煲</div>-->
+                        <!--<div class="sr-searchInfo"><span class="sr-cuxiao">【送49元煮保鲜盒】</span>压力IH加热技术/灰铸铁粉体土层内胆/智慧啊</div>-->
+                        <!--&lt;!&ndash;<div class="sr-saleLable"><span class="sr-zengLable sr-searchLable">赠</span></div>&ndash;&gt;-->
+                        <!--<div class="g-blue"><span class="sr-priceL">¥</span><span class="sr-prices">399</span><span class="sr-priceL">起</span></div></div>-->
+                <!--</div>-->
+                <!--<div class="clear"></div>-->
+            <!--</li>-->
+            <!--<li class="sr-searchResultLi">-->
+                <!--<div class="sr-searchImg ">-->
+                    <!--<img src="../img/p-styleProducts.jpg">-->
+                <!--</div>-->
+                <!--<div class="sr-searchIntro ">-->
+                    <!--<div class="sr-searchMar">-->
+                        <!--<div class="sr-searchliT">米家压力IH电饭煲</div>-->
+                        <!--<div class="sr-searchInfo"><span class="sr-cuxiao">【送49元煮保鲜盒】</span>压力IH加热技术/灰铸铁粉体土层内胆/智慧啊</div>-->
+                        <!--&lt;!&ndash;<div class="sr-saleLable"><span class="sr-zengLable sr-searchLable">赠</span></div>&ndash;&gt;-->
+                        <!--<div class="g-blue"><span class="sr-priceL">¥</span><span class="sr-prices">399</span><span class="sr-priceL">起</span></div></div>-->
+                <!--</div>-->
+                <!--<div class="clear"></div>-->
+            <!--</li>-->
+            <!--<li class="sr-searchResultLi">-->
+                <!--<div class="sr-searchImg ">-->
+                    <!--<img src="../img/p-styleProducts.jpg">-->
+                <!--</div>-->
+                <!--<div class="sr-searchIntro ">-->
+                    <!--<div class="sr-searchMar">-->
+                        <!--<div class="sr-searchliT">米家压力IH电饭煲</div>-->
+                        <!--<div class="sr-searchInfo"><span class="sr-cuxiao">【送49元煮保鲜盒】</span>压力IH加热技术/灰铸铁粉体土层内胆/智慧啊</div>-->
+                        <!--&lt;!&ndash;<div class="sr-saleLable"><span class="sr-zengLable sr-searchLable">赠</span></div>&ndash;&gt;-->
+                        <!--<div class="g-blue"><span class="sr-priceL">¥</span><span class="sr-prices">399</span><span class="sr-priceL">起</span></div></div>-->
+                <!--</div>-->
+                <!--<div class="clear"></div>-->
+            <!--</li>-->
+            <!--<li class="sr-searchResultLi">-->
+                <!--<div class="sr-searchImg ">-->
+                    <!--<img src="../img/p-styleProducts.jpg">-->
+                <!--</div>-->
+                <!--<div class="sr-searchIntro ">-->
+                    <!--<div class="sr-searchMar">-->
+                        <!--<div class="sr-searchliT">米家压力IH电饭煲</div>-->
+                        <!--<div class="sr-searchInfo"><span class="sr-cuxiao">【送49元煮保鲜盒】</span>压力IH加热技术/灰铸铁粉体土层内胆/智慧啊</div>-->
+                        <!--&lt;!&ndash;<div class="sr-saleLable"><span class="sr-zengLable sr-searchLable">赠</span></div>&ndash;&gt;-->
+                        <!--<div class="g-blue"><span class="sr-priceL">¥</span><span class="sr-prices">399</span><span class="sr-priceL">起</span></div></div>-->
+                <!--</div>-->
+                <!--<div class="clear"></div>-->
+            <!--</li>-->
+            <!--<li class="sr-searchResultLi">-->
+                <!--<div class="sr-searchImg ">-->
+                    <!--<img src="../img/p-styleProducts.jpg">-->
+                <!--</div>-->
+                <!--<div class="sr-searchIntro ">-->
+                    <!--<div class="sr-searchMar">-->
+                        <!--<div class="sr-searchliT">米家压力IH电饭煲</div>-->
+                        <!--<div class="sr-searchInfo"><span class="sr-cuxiao">【送49元煮保鲜盒】</span>压力IH加热技术/灰铸铁粉体土层内胆/智慧啊</div>-->
+                        <!--&lt;!&ndash;<div class="sr-saleLable"><span class="sr-zengLable sr-searchLable">赠</span></div>&ndash;&gt;-->
+                        <!--<div class="g-blue"><span class="sr-priceL">¥</span><span class="sr-prices">399</span><span class="sr-priceL">起</span></div></div>-->
+                <!--</div>-->
+                <!--<div class="clear"></div>-->
+            <!--</li>-->
+        </ul>
+        <div class="loadBox"></div>
+    </div>
+    <!--为你推荐-->
+    <div class="recommends"></div>
+</div>
+<div class="footer"></div>
+</body>
+</html>

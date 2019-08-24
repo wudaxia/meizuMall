@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员中心</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../base/css/amazeui.min.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../base/css/base.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../base/js/need/layer.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../css/headerAndFooter.css?v=2017.9.27"/>
+    <link rel="stylesheet" href="../css/vipCenter.css?v=2017.10.10"/>
+    <script type="text/javascript"  src="../base/js/jquery-1.7.1.min.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/amazeui.min.js?v=2017.6.19"></script>
+    <script type="text/javascript" src="../base/js/jquery.touchSlider.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/layer.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/Function.js?v=2017.9.25"></script>
+    <script type="text/javascript"  src="../base/js/template.js?v=2017.9.25"></script>
+    <script type="text/javascript"  src="../js/headerAndFooter.js?v=2017.9.27"></script>
+    <script type="text/javascript" src="../js/wxReturn.js"></script>
+    <script type="text/javascript"  src="../js/vipCenter.js?v=2017.10.10"></script>
+</head>
+<body>
+<div class="header">
+   <!--轮播图-->
+    <div class="vc-banner">
+        <div class="main_visual">
+            <div class="flicking_con">
+                <!--<a href="#">1</a>-->
+                <!--<a href="#">2</a>-->
+                <!--<a href="#">3</a>-->
+                <!--<a href="#">4</a>-->
+            </div>
+            <div class="main_image">
+                <ul class="i-banner1Ul">
+                    <!--<li><a ><img class="img_1" src="../img/vc-banner.png"/></a></li>-->
+                    <!--<li><a ><img class="img_1" src="../img/vc-banner.png"/></a></li>-->
+                    <!--<li><a ><img class="img_1" src="../img/vc-banner.png"/></a></li>-->
+                    <!--<li><a ><img class="img_1" src="../img/vc-banner.png"/></a></li>-->
+                </ul>
+                <a href="javascript:;" id="btn_prev"></a>
+                <a href="javascript:;" id="btn_next"></a>
+            </div>
+        </div>
+        <!--轮播结束-->
+    </div>
+    <!--我的积分-->
+    <div class="vc-myPoint">
+        <div class="vc-myPointL" data-style="0" onclick="vc_goOther(this)">
+            <!--<img src="../img/vc-vip.png" class="vc-myPointImg fl"/>-->
+            <div class="vc-myPointSum fl">
+                <div class="vc-myPointTitle">我的积分</div>
+                <div class="vc-myPointNum vc-myPointNum1"></div>
+            </div>
+            <img src="../img/right.png" class="vc-right fr"/>
+            <div class="clear"></div>
+        </div>
+        <div class="vc-myPointR" data-style="1" onclick="vc_goOther(this)">
+            <!--<img src="../img/vc-vip.png" class="vc-myPointImg fl"/>-->
+            <div class="vc-myPointSum fl">
+                <div class="vc-myPointTitle">我的优惠券</div>
+                <div class="vc-myPointNum vc-myPointNum2"></div>
+            </div>
+            <img src="../img/right.png" class="vc-right fr"/>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="section">
+    <!--福利领取-->
+    <div class="vc-welfare">
+        <div class="vc-welfareT">
+            <img src="../img/vc-welfare.png" class="vc-welfareImg fl"/>
+            <div class="vc-welfareTName fl">福利领取</div>
+            <div class="clear"></div>
+        </div>
+        <div class="vc-welfareB">
+            <!--优惠券列表-->
+            <!--<div class="vc-welfareLi" onclick="vc_goWelfare(this)">-->
+                <!--<div class="vc-welfareLiImg">-->
+                    <!--<img src="../img/p-styleProducts.jpg"/>-->
+                <!--</div>-->
+                <!--<div class="vc-welfareLiDetails">-->
+                    <!--<p class="vc-welfareLiName">满100减20优惠券</p>-->
+                    <!--<p class="vc-welfareLiStyle">仅剩200张</p>-->
+                    <!--<p class="vc-welfareLiStyle">2017/09/10-2017/10/10</p>-->
+                    <!--<p class="vc-welfareLiGet">-->
+                        <!--<span class="vc-welfareLiGetNum">0</span>积分-->
+                    <!--</p>-->
+                <!--</div>-->
+                <!--<div class="clear"></div>-->
+            <!--</div>-->
+            <!--<div class="vc-welfareLi" onclick="vc_goWelfare(this)">-->
+                <!--<div class="vc-welfareLiImg">-->
+                    <!--<img src="../img/p-styleProducts.jpg"/>-->
+                <!--</div>-->
+                <!--<div class="vc-welfareLiDetails">-->
+                    <!--<p class="vc-welfareLiName">5元优惠券</p>-->
+                    <!--<p class="vc-welfareLiStyle">仅剩200张</p>-->
+                    <!--<p class="vc-welfareLiStyle">2017/09/10-2017/10/10</p>-->
+                    <!--<p class="vc-welfareLiGet">-->
+                        <!--<span class="vc-welfareLiGetNum">99990</span>积分-->
+                    <!--</p>-->
+                <!--</div>-->
+                <!--<div class="clear"></div>-->
+            <!--</div>-->
+            <!--<div class="vc-welfareLi" onclick="vc_goWelfare(this)">-->
+                <!--<div class="vc-welfareLiImg">-->
+                    <!--<img src="../img/p-styleProducts.jpg"/>-->
+                <!--</div>-->
+                <!--<div class="vc-welfareLiDetails">-->
+                    <!--<p class="vc-welfareLiName">5元优惠券</p>-->
+                    <!--<p class="vc-welfareLiStyle">仅剩200张</p>-->
+                    <!--<p class="vc-welfareLiStyle">2017/09/10-2017/10/10</p>-->
+                    <!--<p class="vc-welfareLiGet">-->
+                        <!--<span class="vc-welfareLiGetNum">99990</span>积分-->
+                    <!--</p>-->
+                <!--</div>-->
+                <!--<div class="clear"></div>-->
+            <!--</div>-->
+        </div>
+        <div class="loadBox"></div>
+    </div>
+</div>
+<div class="footer"></div>
+</body>
+</html>

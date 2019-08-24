@@ -1,0 +1,131 @@
+body{
+    font-family: SimHei;
+}
+/*公共底部*/
+.footerNav{
+}
+.footerNavLi{
+    width:20%;
+    float: left;
+    text-align: center;
+    font-size: 12px;
+    padding: 8px 0 3px;
+    position: relative;
+}
+.footerNavLiImg{
+    width:22px;}
+.footerNavLiChose{
+    color:#33B8F1;
+}
+.footer{height: 52px;position: relative;}
+.footerNav{
+    background-color: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 20;
+    border-top: 1px solid #E8E8E8;
+}
+.f-shopNum{
+    color:#FFFFFF;
+    position: absolute;
+    top: 4px;
+    right:28%;
+    background-color: #33B8F1;
+    border-radius: 50%;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    font-size: 8px;
+    text-align: center;
+    line-height: 14px;
+}
+
+
+/*为你推荐*/
+.recommendT{
+   padding: 10px 0;
+    background-color: #F5F5F5;
+    border-top: 1px solid #DCDCDC;
+    text-align: center;
+    font-size: 15px;
+    color: #33B8F1;
+    font-weight: bold;
+}
+.recommendT img{
+    height: 15px;
+}
+.recommendTB{
+    color: #919191;
+    font-weight: 500;
+    font-size: 13px;
+}
+.recommendTBL{
+    content: "";
+    width: 26%;
+    display: inline-block;
+    border-top: 1px solid #ABABAB;
+    margin-top: 10px;
+}
+.recommendTBM{
+    display: inline-block;
+    width: 48%;
+}
+.recommendTBR{
+    content: "";
+    width: 26%;
+    border-top: 1px solid #ABABAB;
+    margin-top: 10px;
+}
+.recommendB{
+    background-color: #F3F2F1;
+}
+.recommendLi{
+    width: 49%;
+}
+.recommendLi img{
+    width: 100%;
+}
+.recommendLiName{
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: "黑体";
+    font-size: 14px;
+    line-height: 14px;
+}
+.recommendLis{
+    padding :8px 0;
+    background-color: #F3F2F1;
+}
+.recommendLiPrice{
+    text-align: center;
+    color: #33B8F1;
+    font-size: 15px;
+    line-height: 15px;
+    margin-top: 4px;
+
+}
+.recommendLiPriceL{
+    font-size: 12px;
+    margin-right: 2px;
+}
+.recommendLiPriceL2{
+    font-size: 12px;
+    margin-left: 2px;
+}
+/*返回顶部*/
+.goBack{
+    position: fixed;
+    bottom: 65px;
+    right: 3%;
+    width: 35px;
+    z-index: 9999;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: none;
+}
+.o-blank{margin: auto;text-align: center;vertical-align: middle;margin-top: 30%;}
+.o-blank img{height: 90px;width:100px;margin-bottom: 10px;}

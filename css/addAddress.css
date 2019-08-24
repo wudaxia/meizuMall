@@ -1,0 +1,74 @@
+body{
+    background-color: #EEEEEE;
+}
+/*信息填写*/
+.aa-writeInfo{
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 0 5%;
+    font-size: 13px;
+    line-height: 13px;
+    border-bottom: 1px solid #EEEEEE;
+}
+.aa-writeInfoL{
+    display: inline-block;
+    color: #4B5053;
+    width: 20%;
+    padding:14px 0;
+}
+.aa-writeInfoInput{
+    width: 76%;
+    padding: 12px 5px 13px;
+    border: 0;
+}
+.aa-writeInfoInput::-webkit-input-placeholder { /* WebKit browsers */
+    color:#999;
+    text-align: right;
+}
+.aa-writeInfoInput:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#999;
+    text-align: right;
+}
+.aa-writeInfoInput::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#999;
+    text-align: right;
+}
+.aa-writeInfoInput:-ms-input-placeholder{ /* Internet Explorer 10+ */
+    color:#999;
+    text-align: right;
+}
+.aa-right{
+    height: 12px;
+    margin-top: 14px;
+}
+.aa-writeInfoText{
+    width: 100%;
+    margin: 14px 0;
+    height: 60px;
+    border: 0;
+}
+/*底部*/
+.o-footerNav{
+    position: fixed;
+    background-color: #F8F8F8;
+    z-index: 20;
+    bottom: 0;
+    width: 100%;
+    height: 51px;
+    line-height: 51px;
+}
+.o-footerNavLi{
+    display: inline-block;
+    float: left;
+    color: #FFFFFF;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+}
+.o-footerNavLi1{
+    background-color: #32B7EF;
+}
+.aa-defaultImg{
+    width: 16px;
+    margin-top:13px;
+}

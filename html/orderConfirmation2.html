@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单确认</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../base/css/amazeui.min.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../base/css/base.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../base/js/need/layer.css?v=2017.9.25"/>
+    <link rel="stylesheet" href="../css/headerAndFooter.css?v=2017.9.27"/>
+    <link rel="stylesheet" href="../css/orderConfirmation.css?v=2017.9.28"/>
+    <script type="text/javascript"  src="../base/js/jquery-1.7.1.min.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/amazeui.min.js?v=2017.6.19"></script>
+    <script type="text/javascript" src="../base/js/jquery.touchSlider.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/layer.js?v=2017.9.25"></script>
+    <script type="text/javascript" src="../base/js/Function.js?v=2017.9.25"></script>
+    <script type="text/javascript"  src="../base/js/template.js?v=2017.9.25"></script>
+    <script type="text/javascript"  src="../js/headerAndFooter.js?v=2017.9.27"></script>
+    <script type="text/javascript" src="../js/wxReturn.js"></script>
+    <script type="text/javascript"  src="../js/orderConfirmation2.js?v=2017.9.25"></script>
+</head>
+<body>
+<div class="header">
+
+</div>
+<div class="section">
+    <!--地址-->
+    <div class="oc-address" data-style="1" onclick="oc_goOther(this)">
+        <img src="../img/i-join.png" class="oc-addressImg fl"/>
+        <div class="oc-addressT fl">
+            <span class="oc-userInfo fl">请选择您的地址</span>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        <div class="oc-addressB fl"></div>
+        <img src="../img/right.png" class="oc-right fr oc-addRight"/>
+        <div class="clear"></div>
+    </div>
+    <!--商品-->
+    <div class="oc-product">
+        <!--<div class="oc-productLi">-->
+        <!--<img src="../img/p-styleProducts.jpg" class="oc-productImg"/>-->
+        <!--<div class="oc-productInfo">-->
+        <!--<div class="oc-productName">魅族PRO 6 Plus 4G+64G</div>-->
+        <!--<div class="oc-productAbstract">月光银 64G</div>-->
+        <!--<div class="clear"></div>-->
+        <!--</div>-->
+        <!--<div class="oc-productMoney">-->
+        <!--<div class="oc-productMoneyT">-->
+        <!--<span class="oc-productMoneyTL">¥</span><span class="oc-productMoneyTR">2399</span>-->
+        <!--</div>-->
+        <!--<div class="oc-productMoneyB">-->
+        <!--<span class="oc-productMoneyBL">×</span><span class="oc-productMoneyBR">1</span>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="clear"></div>-->
+        <!--</div>-->
+        <!--<div class="oc-productLi">-->
+        <!--<img src="../img/p-styleProducts.jpg" class="oc-productImg"/>-->
+        <!--<div class="oc-productInfo">-->
+        <!--<div class="oc-productName">魅族PRO 6 Plus 4G+64G</div>-->
+        <!--<div class="oc-productAbstract">月光银 64G</div>-->
+        <!--<div class="clear"></div>-->
+        <!--</div>-->
+        <!--<div class="oc-productMoney">-->
+        <!--<div class="oc-productMoneyT">-->
+        <!--<span class="oc-productMoneyTL">¥</span><span class="oc-productMoneyTR">2399</span>-->
+        <!--</div>-->
+        <!--<div class="oc-productMoneyB">-->
+        <!--<span class="oc-productMoneyBL">×</span><span class="oc-productMoneyBR">1</span>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="clear"></div>-->
+        <!--</div>-->
+        <!--<div class="oc-productLi oc-productLiLast">-->
+        <!--<img src="../img/p-styleProducts.jpg" class="oc-productImg"/>-->
+        <!--<div class="oc-productInfo">-->
+        <!--<div class="oc-productName">魅族PRO 6 Plus 4G+64G</div>-->
+        <!--<div class="oc-productAbstract">月光银 64G</div>-->
+        <!--<div class="clear"></div>-->
+        <!--</div>-->
+        <!--<div class="oc-productMoney">-->
+        <!--<div class="oc-productMoneyT">-->
+        <!--<span class="oc-productMoneyTL">¥</span><span class="oc-productMoneyTR">2399</span>-->
+        <!--</div>-->
+        <!--<div class="oc-productMoneyB">-->
+        <!--<span class="oc-productMoneyBL">×</span><span class="oc-productMoneyBR">1</span>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="clear"></div>-->
+        <!--</div>-->
+    </div>
+    <!--订单金额-->
+    <div class="oc-orderMoney">
+        <div class="oc-orderMoneyT">
+            <div class="oc-orderMoneySum" style="margin-bottom: 10px;">
+                所需积分<span class="fr oc-orderMoneySum2"></span>
+            </div>
+            <!--<div class="oc-orderMoneyDiscount" onclick="oc_goOther(this)" data-style="0">-->
+                <!--优惠券<img src="../img/right.png" class="oc-right fr"/><span class="fr oc-orderMoneyDiscountSumR" data-minNum="0" data-maxNum="0">请选择优惠</span>-->
+            <!--</div>-->
+        </div>
+        <div class="oc-orderMoneyB">
+            应付积分<span class="fr oc-orderMoneyBMoney"></span>
+        </div>
+    </div>
+    <!--下单时间-->
+    <div class="oc-orderTime">
+        <div class="oc-orderTimeT disn">
+            下单日期<span class="fr oc-orderDay"></span>
+        </div>
+        <div class="oc-orderNos disn">
+            订单编号<span class="fr oc-orderNo"></span>
+        </div>
+        <div class="oc-call">
+            <a class="fr" href="tel:15167500695">联系客服</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--为你推荐-->
+    <div class="recommends"></div>
+</div>
+<div class="footer">
+    <div class="oc-footerNav">
+        <div class="oc-footerSumBuy fr" onclick="oc_buyNow(this)">立即兑换</div>
+        <div class="oc-footerSum fr">
+            <span class="oc-footerSumMoenys fr">
+                <span class="oc-footerSumMoeny fr"><span class="oc-footerSumMoenyR"></span></span>
+                <span class="fr">合计积分：</span>
+                <span class="clear"></span>
+            </span>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+</body>
+</html>
